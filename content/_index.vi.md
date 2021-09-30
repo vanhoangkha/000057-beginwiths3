@@ -21,6 +21,6 @@ Amazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11
 
 1. [Tạo S3 bucket](1-creates3bucket/)
 2. [Upload dữ liệu lên S3](2-basicfeature/)
-3. [Sử dụng AWS CLI](3-useawscli/)
+3. [Host static website](3-s3staticweb/)
 4. [Dọn dẹp tài nguyên](4-clearresource/) 
 
