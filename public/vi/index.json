@@ -1,0 +1,78 @@
+[
+{
+	"uri": "/vi/",
+	"title": "Khởi đầu với Amazon S3",
+	"tags": [],
+	"description": "",
+	"content": "Khởi đầu với Amazon S3 Tổng quan Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.\nS3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào.\nS3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu ( dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ.\nAmazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9\u0026rsquo;s) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.\nNội dung  Tạo S3 bucket Upload dữ liệu lên S3 Sử dụng AWS CLI Dọn dẹp tài nguyên  "
+},
+{
+	"uri": "/vi/3-s3staticweb/3.1-enablestaticweb/",
+	"title": "Bật tính năng static website",
+	"tags": [],
+	"description": "",
+	"content": "Bật tính năng static website  Click tab Properties.  Kéo xuống cuối trang, click Edit.  Click Enable.   Tại mục Hosting type, click chọn Host a static website.  Kéo trang xuống dưới.   Mục Index document điền index.html. Click Save changes.  Chúng ta sẽ thấy thông báo đã bật tính năng static web hosting thành công.  "
+},
+{
+	"uri": "/vi/1-creates3bucket/",
+	"title": "Tạo S3 bucket",
+	"tags": [],
+	"description": "",
+	"content": "Tạo S3 bucket Trong bước này, chúng ta sẽ truy cập vào giao diện quản trị dịch vụ S3 và tiến hành tạo 1 S3 bucket.\n Đăng nhập vào AWS Management Console.  Click vào khung tìm kiếm , gõ S3.   Click vào biểu tượng S3 để đi đến giao diện quản trị S3.  Tại giao diện quản trị S3.   Click Create bucket.  Tại trang Create bucket.   Đặt tên S3 bucket của bạn. VD: unique-bucket-name-20xx. Chọn AWS Region là ap-southeast-1.  Lưu ý : Tên S3 bucket bạn đặt cần phải là tên duy nhất trong tất cả các account trong hệ thống của AWS.\n\rKéo xuống cuối trang.   Click Create bucket.  Chúng ta sẽ thấy S3 bucket được tạo thành công như hình dưới.  "
+},
+{
+	"uri": "/vi/3-s3staticweb/3.2-disablelock/",
+	"title": "Cấu hình block public access",
+	"tags": [],
+	"description": "",
+	"content": "Cấu hình block public access  Click tab Permissions.   Click Edit.   Bỏ chọn Block all public access.   Click Save changes.  Điền confirm.   Click Confirm để xác nhận.  Chúng ta đã tắt tính năng block public access thành công, việc này sẽ giúp chúng ta có thể chuyển các object website của chúng ta trở thành public ở bước kế tiếp.  "
+},
+{
+	"uri": "/vi/2-uploadtos3/",
+	"title": "Upload dữ liệu lên S3",
+	"tags": [],
+	"description": "",
+	"content": "Upload dữ liệu lên S3 bucket Trong bước này, chúng ta sẽ upload lên các object lên S3 bucket chúng ta đã tạo.\n Download file zip đính kèm dưới đây và giải nén trên máy của bạn.  \r\rCV\r\r\rCV.zip\r\r(26 KB)\r\r\r\rClick vào tên s3 bucket chúng ta đã tạo ở bước trước.  Click Upload.  Tại trang Upload.   Click Add folder. Chọn folder CV mà bạn đã giải nén. Click Upload. Chúng ta có thể thấy các file được upload như hình dưới.  Kéo xuống cuối trang.   Click Upload.    Chúng ta sẽ thấy quá trình upload thành công như hình dưới.   Click Close, để quay về giao diện quản lý S3 bucket chúng ta đã tạo.   "
+},
+{
+	"uri": "/vi/3-s3staticweb/3.3-makepublic/",
+	"title": "Cấu hình public object",
+	"tags": [],
+	"description": "",
+	"content": "Cấu hình public object  Click tab Objects.   Click chọn folder CV. Click Actions. Click Make public.  Click Make public.  Chúng ta có thể thấy các object của website của chúng ta đã được make public thành công.   Click Close để quay về giao diện quản trị S3 bucket.  "
+},
+{
+	"uri": "/vi/3-s3staticweb/",
+	"title": "Host static website trên S3",
+	"tags": [],
+	"description": "",
+	"content": "Host static website trên S3 Trong bước này, chúng ta sẽ sử dụng S3 để host static website content mà chúng ta đã upload lên ở bước trước.\nNội dung  Bật tính năng static website Cấu hình block public access Cấu hình public object Kiểm tra website  "
+},
+{
+	"uri": "/vi/4-cleanup/",
+	"title": "Dọn dẹp tài nguyên  ",
+	"tags": [],
+	"description": "",
+	"content": "Chúng ta sẽ tiến hành các bước sau để xóa S3 bucket chúng ta đã tạo.\n Tại giao diện quản trị object.   Click Amazon S3.  Click chọn bucket bạn đã tạo trong bài lab.   Click Empty.  Điền permanently delete để xác nhận xóa dữ liệu.   Click Empty.  Click Exit.  Click Delete để tiến hành xóa S3 bucket.  Điền tên S3 bucket để xác nhận thao tác xóa.   Click Delete bucket.  "
+},
+{
+	"uri": "/vi/3-s3staticweb/3.4-viewweb/",
+	"title": "Kiểm tra website",
+	"tags": [],
+	"description": "",
+	"content": "Kiểm tra website  Click vào folder CV.  Click vào object W3.CSS Template.html chúng ta đã upload  Tại trang quản lý object W3.CSS Template.html.   Chuột phải trên đường dẫn object URL. Click Open link in new tab.  Chúng ta sẽ thấy trang web tĩnh của chúng ta như hình dưới.  "
+},
+{
+	"uri": "/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
