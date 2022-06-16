@@ -1,26 +1,28 @@
-+++
-title = "Khởi đầu với Amazon S3"
-date = 2020-04-18T00:38:32+07:00
-weight = 1 
-chapter = false
-+++
+---
+title : "START WITH AMAZON S3"
+date : "`r Sys.Date()`"
+weight : 1
+chapter : false
+---
 
-# Khởi đầu với Amazon S3
+# STARTING WITH AMAZON S3
 
-#### Tổng quan
+Amazon Simple Storage Service (Amazon S3) is an object storage service that provides on-demand scalability, ensuring high levels of data availability, security, and performance. best.
 
-Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất. 
+S3 is built to meet the needs of customers of all sizes and industries who can use this service to store and protect any amount of data.
 
-S3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào. 
+S3 can be used for many use cases such as dataware house, websites, mobile apps, backup and restore, storage, enterprise applications, IoT devices, and data analytics great. In addition, Amazon S3 provides easy-to-use management features, so you can organize your data and configure access controls to meet the specific requirements of your business, organization, and requirements. compliance requirements.
 
-S3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu ( dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ. 
+Amazon S3 is designed for 99.999999999% (11 9's) endurance and stores the data of millions of applications for companies worldwide.
 
-Amazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9's) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.
 
-#### Nội dung
+{{< figure src="../images/serviceicon.png" title="Amazon S3" width=150pc >}}
+#### Content
 
-1. [Tạo S3 bucket](1-creates3bucket/)
-2. [Upload dữ liệu lên S3](2-basicfeature/)
-3. [Host static website](3-s3staticweb/)
-4. [Dọn dẹp tài nguyên](4-clearresource/) 
-
+1. [Introduction](1-introduce/)
+2. [Preparation](2-prerequiste/)
+3. [Enable Static website](3-staticwebsite/)
+4. [Configure public access block](4-blockpublicaccess/)
+5. [Configure public object](5-publicobject/)
+6. [Test website](6-testwebsite/)
+7. [Resource Cleanup](7-cleanup/)
