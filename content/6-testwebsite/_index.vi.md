@@ -13,7 +13,7 @@ Sau khi cài đặt và cấu hình thành công. Tiếp theo chúng ta sẽ ki�
 1. Truy cập vào **S3** bucket đã tạo.
 
     - Chọn **Object**
-    - Chọn **S3-Website** folder đã tải lên.
+    - Chọn **S3-Website-main** folder đã tải lên.
 
 ![Website](/images/6-website/0001.png?featherlight=false&width=90pc)
 
@@ -30,4 +30,4 @@ Sau khi cài đặt và cấu hình thành công. Tiếp theo chúng ta sẽ ki�
    - Chúng ta trải nghiệm giao diện website về du lịch
 
 
-![Website](/images/6-website/0005.png?featherlight=false&width=90pc)
+![Website](/images/6-website/0004.png?featherlight=false&width=90pc)

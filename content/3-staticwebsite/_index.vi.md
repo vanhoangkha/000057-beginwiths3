@@ -22,7 +22,7 @@ pre : " <b> 3. </b> "
 
 3. Trong giao diện **Static website hosting**
 
-   - Chọn *Enable** đối với **Static website hosting**
+   - Chọn **Enable** đối với **Static website hosting**
    - **Hosting type**, chọn **Host a static website**
    - **Index document**, nhập **```index.html```**
 

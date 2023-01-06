@@ -28,7 +28,7 @@ pre : " <b> 2.1 </b> "
 
 ![Create S3 Bucket](/images/2.1-Creates3bucket/0003.png?featherlight=false&width=90pc)
 
-4. Đối **Blok Public Access settings for this bucket**, để mặc định.
+4. Đối **Block Public Access settings for this bucket**, để mặc định.
 
 ![Create S3 Bucket](/images/2.1-Creates3bucket/0004.png?featherlight=false&width=90pc)
 

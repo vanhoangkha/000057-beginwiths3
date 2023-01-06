@@ -22,7 +22,7 @@ pre : " <b> 3. </b> "
 
 3. In the **Static website hosting** interface
 
-    - Select *Enable** for **Static website hosting**
+    - Select **Enable** for **Static website hosting**
     - **Hosting type**, select **Host a static website**
     - **Index document**, enter **```index.html```**
 

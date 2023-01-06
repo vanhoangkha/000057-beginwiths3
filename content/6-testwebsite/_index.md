@@ -13,7 +13,7 @@ After successful installation and configuration. Next, we will check the website
 1. Access the created **S3** bucket.
 
     - Select **Object**
-    - Select **S3-Website** uploaded folder.
+    - Select **S3-Website-main** uploaded folder.
 
 ![Website](/images/6-website/0001.png?featherlight=false&width=90pc)
 
@@ -30,4 +30,4 @@ After successful installation and configuration. Next, we will check the website
    - We experience the website interface for tourism
 
 
-![Website](/images/6-website/0005.png?featherlight=false&width=90pc)
+![Website](/images/6-website/0004.png?featherlight=false&width=90pc)
