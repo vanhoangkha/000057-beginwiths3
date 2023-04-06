@@ -36,17 +36,17 @@ pre : " <b> 5. </b> "
 5. Back to the S3 bucket interface
 
    - Select **Object**
-   - Select the uploaded **Folder**.
+   - Select **first square** to select all Objects
    - Select **Actions**
    - Select **Make public using ACL**
 
-![Public Object](/images/5-publicobject/0005.png?featherlight=false&width=90pc)
+![Public Object](/images/5-publicobject/0005'.png?featherlight=false&width=90pc)
 
 6. On the **Make public** page
 
    - Select **Make public**
 
-![Public Object](/images/5-publicobject/0006.png?featherlight=false&width=90pc)
+![Public Object](/images/5-publicobject/0006'.png?featherlight=false&width=90pc)
 
 7. Complete **public object** configuration
 

@@ -4,7 +4,7 @@
 	"title": "Create S3 bucket",
 	"tags": [],
 	"description": "",
-	"content": "Create S3 bucket First, we will create an S3 bucket\nAccess AWS Management Console Find S3 Select S3 In the S3 interface, select Create bucket In the Create bucket interface\nBucket name, enter aws-first-cloud-journey AWS Region, select the region you want. For Object Ownership, select ACLs disabled (recommended) For Block Public Access settings for this bucket, leave the default. Check again and select Create bucket Finish creating S3 bucket to store source code website. "
+	"content": "Create S3 bucket   First, we will create an S3 bucket\n Access AWS Management Console Find S3 Select S3    In the S3 interface, select Create bucket   In the Create bucket interface\n Bucket name, enter aws-first-cloud-journey AWS Region, select the region you want. For Object Ownership, select ACLs disabled (recommended)    For Block Public Access settings for this bucket, leave the default.  Check again and select Create bucket  Finish creating S3 bucket to store source code website.  "
 },
 {
 	"uri": "/1-introduce/",
@@ -18,56 +18,56 @@
 	"title": "START WITH AMAZON S3",
 	"tags": [],
 	"description": "",
-	"content": "STARTING WITH AMAZON S3 Amazon Simple Storage Service (Amazon S3) is an object storage service that provides on-demand scalability, ensuring high levels of data availability, security, and performance. best.\nS3 is built to meet the needs of customers of all sizes and industries who can use this service to store and protect any amount of data.\nS3 can be used for many use cases such as dataware house, websites, mobile apps, backup and restore, storage, enterprise applications, IoT devices, and data analytics great. In addition, Amazon S3 provides easy-to-use management features, so you can organize your data and configure access controls to meet the specific requirements of your business, organization, and requirements. compliance requirements.\nAmazon S3 is designed for 99.999999999% (11 9\u0026rsquo;s) endurance and stores the data of millions of applications for companies worldwide.\nAmazon S3 Content Introduction Preparation Enable Static website Configure public access block Configure public object Test website Resource Cleanup "
+	"content": "STARTING WITH AMAZON S3 Amazon Simple Storage Service (Amazon S3) is an object storage service that provides on-demand scalability, ensuring high levels of data availability, security, and performance. best.\nS3 is built to meet the needs of customers of all sizes and industries who can use this service to store and protect any amount of data.\nS3 can be used for many use cases such as dataware house, websites, mobile apps, backup and restore, storage, enterprise applications, IoT devices, and data analytics great. In addition, Amazon S3 provides easy-to-use management features, so you can organize your data and configure access controls to meet the specific requirements of your business, organization, and requirements. compliance requirements.\nAmazon S3 is designed for 99.999999999% (11 9\u0026rsquo;s) endurance and stores the data of millions of applications for companies worldwide.\n Amazon S3   Content  Introduction Preparation Enable Static website Configure public access block Configure public object Test website Resource Cleanup  "
 },
 {
 	"uri": "/2-prerequiste/2.2-uploaddata/",
 	"title": "Load data",
 	"tags": [],
 	"description": "",
-	"content": "Download data We perform data upload (source code) to S3 bucket storage.\nWe download Source code to the device.\nIn the interface S3 bucket just created.\nCurrently, we see no object. Select Upload to download data (source code downloaded and unzipped) In the Upload interface\nSelect Add folder Select the unzipped folder Select Upload Wait for 5 minutes, and finish uploading data. Observe the uploaded folder. "
+	"content": "Download data We perform data upload (source code) to S3 bucket storage.\nWe download Source code to the device.\n  In the interface S3 bucket just created.\n Currently, we see no object. Select Upload to download data (source code downloaded and unzipped)    In the Upload interface   Turn on the window containing the folder, file downloaded and unzipped in the above step Press the key combination Ctrl A to select all folders, files in the S3-Website-main folder Drag all selected folders, files and drop them into upload section of S3 Bucket   Results after dropping the folder, file into S3 Bucket  Select Upload  Wait for 5 minutes, and finish uploading data.  Observe the uploaded folder.  "
 },
 {
 	"uri": "/2-prerequiste/",
 	"title": "Preparation ",
 	"tags": [],
 	"description": "",
-	"content": "Preparation steps In this lab, we create S3 bucket and then upload the data to prepare the host static website.\nCreate S3 bucket Download data "
+	"content": "Preparation steps In this lab, we create S3 bucket and then upload the data to prepare the host static website.\n Create S3 bucket Download data  "
 },
 {
 	"uri": "/3-staticwebsite/",
 	"title": "Enable static website feature",
 	"tags": [],
 	"description": "",
-	"content": "Enable static website Next we will turn on the static website feature\nIn the S3 bucket interface, select Properties In the Properties interface\nScroll down and select Edit Static website hosting. In the Static website hosting interface\nSelect Enable for Static website hosting Hosting type, select Host a static website Index document, enter index.html Check again and select Save changes Complete enable static website hosting feature "
+	"content": "Enable static website   Next we will turn on the static website feature\n In the S3 bucket interface, select Properties     In the Properties interface\n Scroll down and select Edit Static website hosting.     In the Static website hosting interface\n Select Enable for Static website hosting Hosting type, select Host a static website Index document, enter index.html    Check again and select Save changes  Complete enable static website hosting feature  "
 },
 {
 	"uri": "/4-blockpublicaccess/",
 	"title": "Configuring public access block",
 	"tags": [],
 	"description": "",
-	"content": "Configure public access block To be able to access the hosted website we will reconfigure Block Public Access\nIn the S3 bucket interface Select Permissions Currently, we see Block all public access is On In the Block public access interface Uncheck Block all public access Select Save changes Confirm confirm and select Confirm Complete Block public access configuration "
+	"content": "Configure public access block To be able to access the hosted website we will reconfigure Block Public Access\n In the S3 bucket interface   Select Permissions Currently, we see Block all public access is On  In the Block public access interface   Uncheck Block all public access Select Save changes  Confirm confirm and select Confirm  Complete Block public access configuration  "
 },
 {
 	"uri": "/5-publicobject/",
 	"title": "Configuring public objects",
 	"tags": [],
 	"description": "",
-	"content": "Configure public object In the S3 bucket interface\nSelect Permissions Drag the interface down\nIn the Access control list (ACL) section, select bucket owner enforced In the Object Ownership interface\nSelect ACLs enabled Select I acknowledge that ACLs will be restored Select Bucket owner preferred Select Save changes Finish Editing Object Ownership Back to the S3 bucket interface\nSelect Object Select the uploaded Folder. Select Actions Select Make public using ACL On the Make public page\nSelect Make public Complete public object configuration "
+	"content": "Configure public object   In the S3 bucket interface\n Select Permissions     Drag the interface down\n In the Access control list (ACL) section, select bucket owner enforced     In the Object Ownership interface\n Select ACLs enabled Select I acknowledge that ACLs will be restored Select Bucket owner preferred Select Save changes    Finish Editing Object Ownership   Back to the S3 bucket interface\n Select Object Select first square to select all Objects Select Actions Select Make public using ACL     On the Make public page\n Select Make public    Complete public object configuration  "
 },
 {
 	"uri": "/6-testwebsite/",
 	"title": "Test website",
 	"tags": [],
 	"description": "",
-	"content": "Check the website After successful installation and configuration. Next, we will check the website again.\nAccess the created S3 bucket.\nSelect Object Select S3-Website-main uploaded folder. Select index.html In the index.html details, we will choose Object URL Open a new browser tab and paste the Object URL of index.html.\nWe experience the website interface for tourism "
+	"content": "Check the website After successful installation and configuration. Next, we will check the website again.\n  Access the created S3 bucket.\n Select Properties     Select Bucket website endpoint\n Scroll to the bottom of the page, click the square icon to copy Bucket website endpoint     Open a new browser tab and paste Bucket website endpoint copied in step 2\n We experience the website interface about tourism    "
 },
 {
 	"uri": "/7-cleanup/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
-	"content": "Clean up resources Empty S3 bucket Go to AWS S3 In the Bucket name list, select the bucket related to the lab. Select Empty In the Empty bucket page, confirm and select Empty Delete S3 Bucket Go to AWS S3 Select S3 bucket related to the lab. Select Delete bucket "
+	"content": "Clean up resources Empty S3 bucket  Go to AWS S3 In the Bucket name list, select the bucket related to the lab. Select Empty In the Empty bucket page, confirm and select Empty  Delete S3 Bucket  Go to AWS S3 Select S3 bucket related to the lab. Select Delete bucket  "
 },
 {
 	"uri": "/categories/",

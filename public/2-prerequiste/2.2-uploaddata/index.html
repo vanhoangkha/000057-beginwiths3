@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.99.1" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Load data :: Start with Amazon S3</title>
+    <title>Load data :: STARTING WITH AMAZON S3</title>
 
     
-    <link href="/css/nucleus.css?1673837742" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1673837742" rel="stylesheet">
-    <link href="/css/hybrid.css?1673837742" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1673837742" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1673837742" rel="stylesheet">
-    <link href="/css/auto-complete.css?1673837742" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1673837742" rel="stylesheet">
-    <link href="/css/theme.css?1673837742" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1673837742" rel="stylesheet">
+    <link href="/css/nucleus.css?1680812259" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1680812259" rel="stylesheet">
+    <link href="/css/hybrid.css?1680812259" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1680812259" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1680812259" rel="stylesheet">
+    <link href="/css/auto-complete.css?1680812259" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1680812259" rel="stylesheet">
+    <link href="/css/theme.css?1680812259" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1680812259" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1673837742" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1680812259" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1673837742"></script>
+    <script src="/js/jquery-3.3.1.min.js?1680812259"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1673837742"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1673837742"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1680812259"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1680812259"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1673837742"></script>
+<script type="text/javascript" src="/js/search.js?1680812259"></script>
 
     
   </div>
@@ -168,7 +168,7 @@
   
     
     <li data-nav-id="/2-prerequiste/2.2-uploaddata/" title="Load data" class="dd-item 
-        
+        parent
         active
         
         ">
@@ -334,7 +334,11 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+                  <a class="padding" href="https://aws.amazon.com/blogs"><i class='fab fa-aws'></i> AWS Study Group - Blog</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj"><i class='fab fa-facebook'></i> AWS Study Group - FB Group</a>
               </li>
           
         </ul>
@@ -411,7 +415,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>06-01-2023</font></i>
+        <i><font color=orange>07-04-2023</font></i>
     </left>
     <left>
         <br>
@@ -520,19 +524,22 @@
 </ol>
 <p><img src="/images/2.2-Uploaddata/0001.png?featherlight=false&amp;width=90pc" alt="Upload data"></p>
 <ol start="2">
-<li>
-<p>In the <strong>Upload</strong> interface</p>
-<ul>
-<li>Select <strong>Add folder</strong></li>
-<li>Select the unzipped <strong>folder</strong></li>
-</ul>
-</li>
+<li>In the <strong>Upload</strong> interface</li>
 </ol>
-<p><img src="/images/2.2-Uploaddata/0002.png?featherlight=false&amp;width=90pc" alt="Upload data"></p>
+<ul>
+<li>Turn on the window containing the <strong>folder</strong>, <strong>file</strong> downloaded and unzipped in the above step</li>
+<li>Press the key combination <strong>Ctrl A</strong> to select all <strong>folders</strong>, <strong>files</strong> in the <strong>S3-Website-main</strong> folder</li>
+<li>Drag all selected <strong>folders</strong>, <strong>files</strong> and drop them into <strong>upload</strong> section of <strong>S3 Bucket</strong></li>
+</ul>
+<p><img src="/images/2.2-Uploaddata/0002'.png?featherlight=false&amp;width=90pc" alt="Upload data"></p>
+<ul>
+<li>Results after dropping the <strong>folder</strong>, <strong>file</strong> into <strong>S3 Bucket</strong></li>
+</ul>
+<p><img src="/images/2.2-Uploaddata/0002''.png?featherlight=false&amp;width=90pc" alt="Upload data"></p>
 <ol start="3">
 <li>Select <strong>Upload</strong></li>
 </ol>
-<p><img src="/images/2.2-Uploaddata/0003.png?featherlight=false&amp;width=90pc" alt="Upload data"></p>
+<p><img src="/images/2.2-Uploaddata/0002'''.png?featherlight=false&amp;width=90pc" alt="Upload data"></p>
 <ol start="4">
 <li>Wait for 5 minutes, and finish uploading data.</li>
 </ol>
@@ -540,7 +547,7 @@
 <ol start="5">
 <li>Observe the uploaded folder.</li>
 </ol>
-<p><img src="/images/2.2-Uploaddata/0005.png?featherlight=false&amp;width=90pc" alt="Upload data"></p>
+<p><img src="/images/2.2-Uploaddata/0005'.png?featherlight=false&amp;width=90pc" alt="Upload data"></p>
 
 
 
@@ -755,19 +762,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1673837742"></script>
-    <script src="/js/perfect-scrollbar.min.js?1673837742"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1673837742"></script>
-    <script src="/js/jquery.sticky.js?1673837742"></script>
-    <script src="/js/featherlight.min.js?1673837742"></script>
-    <script src="/js/highlight.pack.js?1673837742"></script>
+    <script src="/js/clipboard.min.js?1680812259"></script>
+    <script src="/js/perfect-scrollbar.min.js?1680812259"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1680812259"></script>
+    <script src="/js/jquery.sticky.js?1680812259"></script>
+    <script src="/js/featherlight.min.js?1680812259"></script>
+    <script src="/js/highlight.pack.js?1680812259"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1673837742"></script>
-    <script src="/js/learn.js?1673837742"></script>
-    <script src="/js/hugo-learn.js?1673837742"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1680812259"></script>
+    <script src="/js/learn.js?1680812259"></script>
+    <script src="/js/hugo-learn.js?1680812259"></script>
 
-    <link href="/mermaid/mermaid.css?1673837742" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1673837742"></script>
+    <link href="/mermaid/mermaid.css?1680812259" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1680812259"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

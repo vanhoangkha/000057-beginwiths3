@@ -12,22 +12,19 @@ After successful installation and configuration. Next, we will check the website
 
 1. Access the created **S3** bucket.
 
-    - Select **Object**
-    - Select **S3-Website-main** uploaded folder.
+    - Select **Properties**
 
-![Website](/images/6-website/0001.png?featherlight=false&width=90pc)
+![Website](/images/6-website/0001'.png?featherlight=false&width=90pc)
 
-2. Select **index.html**
+2. Select **Bucket website endpoint**
 
-![Website](/images/6-website/0002.png?featherlight=false&width=90pc)
+    - Scroll to the bottom of the page, click the **square icon** to copy **Bucket website endpoint**
 
-3. In the **index.html** details, we will choose **Object URL**
-
-![Website](/images/6-website/0003.png?featherlight=false&width=90pc)
-
-4. Open a new browser tab and paste the **Object URL** of **index.html**.
-
-   - We experience the website interface for tourism
+![Website](/images/6-website/0002'.png?featherlight=false&width=90pc)
 
 
-![Website](/images/6-website/0004.png?featherlight=false&width=90pc)
+3. Open a new browser tab and paste **Bucket website endpoint** copied in step 2
+
+   - We experience the website interface about tourism
+
+![Website](/images/6-website/0004'.png?featherlight=false&width=90pc)

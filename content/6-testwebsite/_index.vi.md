@@ -12,22 +12,19 @@ Sau khi cài đặt và cấu hình thành công. Tiếp theo chúng ta sẽ ki�
 
 1. Truy cập vào **S3** bucket đã tạo.
 
-    - Chọn **Object**
-    - Chọn **S3-Website-main** folder đã tải lên.
+    - Chọn **Properties**
 
-![Website](/images/6-website/0001.png?featherlight=false&width=90pc)
+![Website](/images/6-website/0001'.png?featherlight=false&width=90pc)
 
-2. Chọn **index.html**
+2. Chọn **Bucket website endpoint**
 
-![Website](/images/6-website/0002.png?featherlight=false&width=90pc)
+    - Cuộn xuống cuối trang, nhấp vào biểu tượng **ô vuông** để copy **Bucket website endpoint**
 
-3. Trong thông tin chi tiết về **index.html**, chúng ta sẽ chọn **Object URL**
+![Website](/images/6-website/0002'.png?featherlight=false&width=90pc)
 
-![Website](/images/6-website/0003.png?featherlight=false&width=90pc)
 
-4. Mở tab trình duyệt mới và dán **Object URL** của **index.html** vào.
+3. Mở tab trình duyệt mới và dán **Bucket website endpoint** vừa copy ở bước 2
 
    - Chúng ta trải nghiệm giao diện website về du lịch
 
-
-![Website](/images/6-website/0004.png?featherlight=false&width=90pc)
+![Website](/images/6-website/0004'.png?featherlight=false&width=90pc)

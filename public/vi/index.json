@@ -4,70 +4,70 @@
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
-	"content": "Tổng quan Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.\nS3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào.\nS3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu ( dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ.\nAmazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9’s) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.\n"
+	"content": "Tổng quan Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.\nS3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào.\nS3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu (dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ.\nAmazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9’s) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.\n"
 },
 {
 	"uri": "/vi/",
 	"title": "KHỞI ĐẦU VỚI AMAZON S3",
 	"tags": [],
 	"description": "",
-	"content": "KHỞI ĐẦU VỚI AMAZON S3 Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.\nS3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào.\nS3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu ( dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ.\nAmazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9’s) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.\nAmazon S3 Nội dung Giới thiệu Chuẩn bị Bật tính năng Static website Cấu hình block public access Cấu hình public object Kiểm tra website Dọn dẹp tài nguyên "
+	"content": "KHỞI ĐẦU VỚI AMAZON S3 Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.\nS3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào.\nS3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu ( dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ.\nAmazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9’s) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.\n Amazon S3   Nội dung  Giới thiệu Chuẩn bị Bật tính năng Static website Cấu hình block public access Cấu hình public object Kiểm tra website Dọn dẹp tài nguyên  "
 },
 {
 	"uri": "/vi/2-prerequiste/2.1-creates3bucket/",
 	"title": "Tạo S3 bucket",
 	"tags": [],
 	"description": "",
-	"content": "Tạo S3 bucket Đầu tiên, chúng ta sẽ tạo một S3 bucket\nTruy cập AWS Management Console Tìm S3 Chọn S3 Trong giao diện S3, chọn Create bucket Trong giao diện Create bucket\nBucket name, nhập aws-first-cloud-journey AWS Region, chọn region bạn muốn. Đối với Object Ownership, chọn ACLs disabled (recommended) Đối Block Public Access settings for this bucket, để mặc định. Kiểm tra lại và chọn Create bucket Hoàn thành tạo S3 bucket lưu trữ source coe website. "
+	"content": "Tạo S3 bucket   Đầu tiên, chúng ta sẽ tạo một S3 bucket\n Truy cập AWS Management Console Tìm S3 Chọn S3    Trong giao diện S3, chọn Create bucket   Trong giao diện Create bucket\n Bucket name, nhập aws-first-cloud-journey AWS Region, chọn region bạn muốn. Đối với Object Ownership, chọn ACLs disabled (recommended)    Đối Block Public Access settings for this bucket, để mặc định.  Kiểm tra lại và chọn Create bucket  Hoàn thành tạo S3 bucket lưu trữ source coe website.  "
 },
 {
 	"uri": "/vi/2-prerequiste/",
 	"title": "Các bước chuẩn bị",
 	"tags": [],
 	"description": "",
-	"content": "Các bước chuẩn bị Trong bài lab này, chúng ta thực hiện tạo S3 bucket và sau đó upload dữ liệu lên để chuẩn bị host static website.\nTạo S3 bucket Tải dữ liệu "
+	"content": "Các bước chuẩn bị Trong bài lab này, chúng ta thực hiện tạo S3 bucket và sau đó upload dữ liệu lên để chuẩn bị host static website.\n Tạo S3 bucket Tải dữ liệu  "
 },
 {
 	"uri": "/vi/2-prerequiste/2.2-uploaddata/",
 	"title": "Tải dữ liệu",
 	"tags": [],
 	"description": "",
-	"content": "Tải dữ liệu Chúng ta thực hiện tải dữ liệu (source code) lên S3 bucket lưu trữ.\nChúng ta thực hiện tải Source code về máy.\nTrong giao diện S3 bucket vừa tạo.\nHiện tại, chúng ta thấy chưa có object. Chọn Upload để tải dữ liệu (source code đã tải về máy và giải nén) Trong giao diện Upload\nChọn Add folder Chọn folder đã được giải nén Chọn Upload Đợi trong thời gian 5 phút, hoàn thành upload dữ liệu. Quan sát thư mục đã tải lên. "
+	"content": "Tải dữ liệu Chúng ta thực hiện tải dữ liệu (source code) lên S3 bucket lưu trữ.\nChúng ta thực hiện tải Source code về máy.\n  Trong giao diện S3 bucket vừa tạo.\n Hiện tại, chúng ta thấy chưa có object. Chọn Upload để tải dữ liệu (source code đã tải về máy và giải nén)    Trong giao diện Upload   Bật cửa sổ chứa các folder, file đã down về và giải nén ở bước trên Bấm tổ hợp phím Ctrl A để chọn toàn bộ các folder, file có trong thư mục S3-Website-main Kéo toàn bộ các folder, file đã chọn rồi thả vào mục upload của S3 Bucket   Kết quản sau khi thả các folder, file vào S3 Bucket  Cuộn xuống cuối trang \u0026amp; chọn Upload  Đợi trong thời gian 5 phút, hoàn thành upload dữ liệu.  Quan sát thư mục đã tải lên.  "
 },
 {
 	"uri": "/vi/3-staticwebsite/",
 	"title": "Bật tính năng static website",
 	"tags": [],
 	"description": "",
-	"content": "Bật tính năng static website Tiếp theo chúng ta sẽ bật tính năng static website\nTrong giao diện S3 bucket, chọn Properties Trong giao diện Properties\nKéo xuống và chọn Edit Static website hosting. Trong giao diện Static website hosting\nChọn Enable đối với Static website hosting Hosting type, chọn Host a static website Index document, nhập index.html Kiểm tra lại và chọn Save changes Hoàn thành bật tính năng static website hosting "
+	"content": "Bật tính năng static website   Tiếp theo chúng ta sẽ bật tính năng static website\n Trong giao diện S3 bucket, chọn Properties     Trong giao diện Properties\n Kéo xuống và chọn Edit Static website hosting.     Trong giao diện Static website hosting\n Chọn Enable đối với Static website hosting Hosting type, chọn Host a static website Index document, nhập index.html    Kiểm tra lại và chọn Save changes  Hoàn thành bật tính năng static website hosting  "
 },
 {
 	"uri": "/vi/4-blockpublicaccess/",
 	"title": "Cấu hình block public access",
 	"tags": [],
 	"description": "",
-	"content": "Cấu hình block public access Để có thể truy cập vào website được host chúng ta sẽ cấu hình lại Block Public Access\nTrong giao diện S3 bucket\nChọn Permissions Hiện tại, chúng ta thấy Block all public access đang On Trong giao diện Block public access\nBỏ chọn Block all public access Chọn Save changes Xác nhận confirm và chọn Confirm Hoàn thành cấu hình Block public access "
+	"content": "Cấu hình block public access Để có thể truy cập vào website được host chúng ta sẽ cấu hình lại Block Public Access\n  Trong giao diện S3 bucket\n Chọn Permissions Hiện tại, chúng ta thấy Block all public access đang On     Trong giao diện Block public access\n Bỏ chọn Block all public access Chọn Save changes    Xác nhận confirm và chọn Confirm  Hoàn thành cấu hình Block public access  "
 },
 {
 	"uri": "/vi/5-publicobject/",
 	"title": "Cấu hình public object",
 	"tags": [],
 	"description": "",
-	"content": "Cấu hình public object Trong giao diện S3 bucket\nChọn Permissions Kéo giao diện xuống\nTrong phần Access control list (ACL), chọn bucket owner enforced Trong giao diện Object Ownership\nChọn ACLs enabled Chọn I acknowledge that ACLs will be restored Chọn Bucket owner preferred Chọn Save changes Hoàn thành chỉnh sửa Object Ownership Quay lại giao diện S3 bucket\nChọn Object Chọn Folder đã tải lên. Chọn Actions Chọn Make public using ACL Trong trang Make public\nChọn Make public Hoàn thành cấu hình public object "
+	"content": "Cấu hình public object   Trong giao diện S3 bucket\n Chọn Permissions     Kéo giao diện xuống\n Trong phần Access control list (ACL), chọn bucket owner enforced     Trong giao diện Object Ownership\n Chọn ACLs enabled Chọn I acknowledge that ACLs will be restored Chọn Bucket owner preferred Chọn Save changes    Hoàn thành chỉnh sửa Object Ownership   Quay lại giao diện S3 bucket\n Chọn Objects Chọn ô vuông đầu tiên để chọn tất cả Objects Chọn Actions Chọn Make public using ACL     Trong trang Make public\n Chọn Make public    Hoàn thành cấu hình public object  "
 },
 {
 	"uri": "/vi/6-testwebsite/",
 	"title": "Kiểm tra website",
 	"tags": [],
 	"description": "",
-	"content": "Kiểm tra website Sau khi cài đặt và cấu hình thành công. Tiếp theo chúng ta sẽ kiểm tra lại website.\nTruy cập vào S3 bucket đã tạo.\nChọn Object Chọn S3-Website-main folder đã tải lên. Chọn index.html Trong thông tin chi tiết về index.html, chúng ta sẽ chọn Object URL Mở tab trình duyệt mới và dán Object URL của index.html vào.\nChúng ta trải nghiệm giao diện website về du lịch "
+	"content": "Kiểm tra website Sau khi cài đặt và cấu hình thành công. Tiếp theo chúng ta sẽ kiểm tra lại website.\n  Truy cập vào S3 bucket đã tạo.\n Chọn Properties     Chọn Bucket website endpoint\n Cuộn xuống cuối trang, nhấp vào biểu tượng ô vuông để copy Bucket website endpoint     Mở tab trình duyệt mới và dán Bucket website endpoint vừa copy ở bước 2\n Chúng ta trải nghiệm giao diện website về du lịch    "
 },
 {
 	"uri": "/vi/7-cleanup/",
 	"title": "Dọn dẹp tài nguyên",
 	"tags": [],
 	"description": "",
-	"content": "Dọn dẹp tài nguyên Empty S3 bucket Truy cập AWS S3 Trong danhs sách Bucket name, chọn bucket liên quan bài lab. Chọn Empty Trong trang Empty bucket, xác nhận và chọn Empty Xóa S3 Bucket Truy cập vào AWS S3 Chọn S3 bucket liên quan bài lab. Chọn Delete bucket "
+	"content": "Dọn dẹp tài nguyên Empty S3 bucket  Truy cập AWS S3 Trong danhs sách Bucket name, chọn bucket liên quan bài lab. Chọn Empty Trong trang Empty bucket, xác nhận và chọn Empty  Xóa S3 Bucket  Truy cập vào AWS S3 Chọn S3 bucket liên quan bài lab. Chọn Delete bucket  "
 },
 {
 	"uri": "/vi/categories/",
