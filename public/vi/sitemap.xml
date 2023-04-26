@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/vi/7-cloudfront/7.1-block_all_public_access/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/7-cloudfront/7.1-block_all_public_access/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/7-cloudfront/7.1-block_all_public_access/"
+                />
+  </url><url>
     <loc>/vi/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
@@ -50,6 +62,18 @@
                 href="/vi/2-prerequiste/"
                 />
   </url><url>
+    <loc>/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/"
+                />
+  </url><url>
     <loc>/vi/2-prerequiste/2.2-uploaddata/</loc>
     <xhtml:link
                 rel="alternate"
@@ -72,6 +96,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/3-staticwebsite/"
+                />
+  </url><url>
+    <loc>/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/"
                 />
   </url><url>
     <loc>/vi/4-blockpublicaccess/</loc>
@@ -110,16 +146,28 @@
                 href="/vi/6-testwebsite/"
                 />
   </url><url>
-    <loc>/vi/7-cleanup/</loc>
+    <loc>/vi/7-cloudfront/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-cleanup/"
+                href="/7-cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-cleanup/"
+                href="/vi/7-cloudfront/"
+                />
+  </url><url>
+    <loc>/vi/8-cleanup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/8-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/8-cleanup/"
                 />
   </url><url>
     <loc>/vi/categories/</loc>

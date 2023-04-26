@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chặn tất cả truy cập công cộng vào S3 on Khởi đầu với Amazon S3</title>
+    <link>/vi/7-cloudfront/7.1-block_all_public_access/</link>
+    <description>Recent content in Chặn tất cả truy cập công cộng vào S3 on Khởi đầu với Amazon S3</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/vi/7-cloudfront/7.1-block_all_public_access/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

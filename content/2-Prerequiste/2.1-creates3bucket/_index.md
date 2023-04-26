@@ -28,6 +28,10 @@ pre : " <b> 2.1 </b> "
 
 ![Create S3 Bucket](/images/2.1-Creates3bucket/0003.png?featherlight=false&width=90pc)
 
+**Note**: because **Bucket name** is globally unique, using **Bucket name** as above will appear the text: Bucket with the same name already exists. Therefore, it is necessary to add a number after it so that your **Bucket name** matches the policy.
+
+![Create S3 Bucket](/images/2.1-Creates3bucket/0003'.png?featherlight=false&width=90pc)
+
 4. For **Block Public Access settings for this bucket**, leave the default.
 
 ![Create S3 Bucket](/images/2.1-Creates3bucket/0004.png?featherlight=false&width=90pc)

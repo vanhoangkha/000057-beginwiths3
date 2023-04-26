@@ -28,6 +28,10 @@ pre : " <b> 2.1 </b> "
 
 ![Create S3 Bucket](/images/2.1-Creates3bucket/0003.png?featherlight=false&width=90pc)
 
+**Lưu ý**: vì **Bucket name** là duy nhất trên mức độ toàn cầu, nên bạn sử dụng **Bucket name** y như trên sẽ xuất hiện dòng chữ: "Bucket with the same name already exists". Vậy cần thêm vài số phía sau để **Bucket name** của bạn phù hợp với policy.
+
+![Create S3 Bucket](/images/2.1-Creates3bucket/0003'.png?featherlight=false&width=90pc)
+
 4. Đối **Block Public Access settings for this bucket**, để mặc định.
 
 ![Create S3 Bucket](/images/2.1-Creates3bucket/0004.png?featherlight=false&width=90pc)

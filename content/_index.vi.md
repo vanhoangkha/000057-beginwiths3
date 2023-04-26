@@ -26,4 +26,5 @@ Amazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11
 4. [Cấu hình block public access](4-blockpublicaccess/)
 5. [Cấu hình public object](5-publicobject/)
 6. [Kiểm tra website](6-testwebsite/)
-7. [Dọn dẹp tài nguyên](7-cleanup/)
+7. [Tăng tốc Static website host trên S3](7-cloudfront/)
+8. [Dọn dẹp tài nguyên](7-cleanup/)

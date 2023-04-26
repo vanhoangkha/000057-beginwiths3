@@ -1,10 +1,24 @@
 [
 {
+	"uri": "/7-cloudfront/7.1-block_all_public_access/",
+	"title": "Block all public access",
+	"tags": [],
+	"description": "",
+	"content": "  In the S3 bucket interface\n Select Permissions Currently, we see Block all public access is Off because we turned Off in step 4 Select Edit   Select Block all public access Select Save changes   Another window appears to confirm the edit, enter confirm Select confirm   Block all public access has been enabled, now no public access will be able to connect to your S3 Bucket.    Test function Block all public access\n In the S3 bucket interface Select Properties     Scroll to the bottom of the page, at Static website hosting Select the square symbol to copy the URL   Press the key combination: Ctrl + Shift + N to open a new incognito browser (avoid the browser re-caching the website in step 6) \u0026amp; paste the copied URL above.  -\u0026gt; Congratulations you have successfully Block all public access\n"
+},
+{
+	"uri": "/",
+	"title": "START WITH AMAZON S3",
+	"tags": [],
+	"description": "",
+	"content": "STARTING WITH AMAZON S3 Amazon Simple Storage Service (Amazon S3) is an object storage service that provides on-demand scalability, ensuring high levels of data availability, security, and performance. best.\nS3 is built to meet the needs of customers of all sizes and industries who can use this service to store and protect any amount of data.\nS3 can be used for many use cases such as dataware house, websites, mobile apps, backup and restore, storage, enterprise applications, IoT devices, and data analytics great. In addition, Amazon S3 provides easy-to-use management features, so you can organize your data and configure access controls to meet the specific requirements of your business, organization, and requirements. compliance requirements.\nAmazon S3 is designed for 99.999999999% (11 9\u0026rsquo;s) endurance and stores the data of millions of applications for companies worldwide.\n Amazon S3   Content  Introduction Preparation Enable Static website Configure public access block Configure public object Test website Resource Cleanup  "
+},
+{
 	"uri": "/2-prerequiste/2.1-creates3bucket/",
 	"title": "Create S3 bucket",
 	"tags": [],
 	"description": "",
-	"content": "Create S3 bucket   First, we will create an S3 bucket\n Access AWS Management Console Find S3 Select S3    In the S3 interface, select Create bucket   In the Create bucket interface\n Bucket name, enter aws-first-cloud-journey AWS Region, select the region you want. For Object Ownership, select ACLs disabled (recommended)    For Block Public Access settings for this bucket, leave the default.  Check again and select Create bucket  Finish creating S3 bucket to store source code website.  "
+	"content": "Create S3 bucket   First, we will create an S3 bucket\n Access AWS Management Console Find S3 Select S3    In the S3 interface, select Create bucket   In the Create bucket interface\n Bucket name, enter aws-first-cloud-journey AWS Region, select the region you want. For Object Ownership, select ACLs disabled (recommended)    Note: because Bucket name is globally unique, using Bucket name as above will appear the text: Bucket with the same name already exists. Therefore, it is necessary to add a number after it so that your Bucket name matches the policy.\nFor Block Public Access settings for this bucket, leave the default.  Check again and select Create bucket  Finish creating S3 bucket to store source code website.  "
 },
 {
 	"uri": "/1-introduce/",
@@ -14,11 +28,11 @@
 	"content": "Overview Amazon Simple Storage Service (Amazon S3) is an object storage service that provides on-demand scalability, ensuring high levels of data availability, security, and performance. best.\nS3 is built to meet the needs of customers of all sizes and industries who can use this service to store and protect any amount of data.\nS3 can be used for many use cases such as dataware house, websites, mobile apps, backup and restore, storage, enterprise applications, IoT devices, and data analytics great. In addition, Amazon S3 provides easy-to-use management features, so you can organize your data and configure access controls to meet the specific requirements of your business, organization, and requirements. compliance requirements.\nAmazon S3 is designed for 99.999999999% (11 9\u0026rsquo;s) endurance and stores the data of millions of applications for companies worldwide.\n"
 },
 {
-	"uri": "/",
-	"title": "START WITH AMAZON S3",
+	"uri": "/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/",
+	"title": "Config Amazon CloudFront",
 	"tags": [],
 	"description": "",
-	"content": "STARTING WITH AMAZON S3 Amazon Simple Storage Service (Amazon S3) is an object storage service that provides on-demand scalability, ensuring high levels of data availability, security, and performance. best.\nS3 is built to meet the needs of customers of all sizes and industries who can use this service to store and protect any amount of data.\nS3 can be used for many use cases such as dataware house, websites, mobile apps, backup and restore, storage, enterprise applications, IoT devices, and data analytics great. In addition, Amazon S3 provides easy-to-use management features, so you can organize your data and configure access controls to meet the specific requirements of your business, organization, and requirements. compliance requirements.\nAmazon S3 is designed for 99.999999999% (11 9\u0026rsquo;s) endurance and stores the data of millions of applications for companies worldwide.\n Amazon S3   Content  Introduction Preparation Enable Static website Configure public access block Configure public object Test website Resource Cleanup  "
+	"content": "Use the AWS management console, to create a CloudFront distribution and configure this service to serve the S3 Bucket we created earlier.\n Open the Amazon CloudFront console at https://console.aws.amazon.com/cloudfront/home. From the dashboard, click Create a CloudFront distribution.  Specify the following settings for the distribution:    In the Origin domain field, select the S3 bucket you created earlier.\n  In the Origin access field, select Legacy access identities\n  Select Create new OAI -\u0026gt; keep the value name \u0026amp; select Create with OAI as Origin access identity\n In the Bucket policy field, select Yes, update the bucket policy to let AWS auto update the permission to let CloudFront access into the S3 bucket   Scroll down near the bottom of the page:   In the Web Application Firewall (WAF) section \u0026amp; in this lab, select Do not enable security protections\n  In the Settings section,\n We will choose Use North America, Europe, Asia, Middle East, and Africa! In the Default root object - optional section, enter index.html which is the object you uploaded in step 2.2 (Loading data)    Keep the default values, select Create distribution\n    Note: In case, your actual customer is globally, you should select Use all edge locations (best performance) to deliver at 450+ Points of Presence(PoP),400+ Edge Locations.\n  Information CloudFront   After completing item 3 above, AWS will automatically redirect you to CloudFront information page as shown below, with status as Deploying  Note: please wait for this status for a few minutes - depending on the number of edge locations you chose to deploy in item 3. In the meantime, you can open another tab to return to the S3 bucket \u0026amp; see what values cloudfront has added to the bucket policy.\n In the S3 bucket interface, select Permissions   In the Bucket policy section, you review the important content  "
 },
 {
 	"uri": "/2-prerequiste/2.2-uploaddata/",
@@ -42,6 +56,13 @@
 	"content": "Enable static website   Next we will turn on the static website feature\n In the S3 bucket interface, select Properties     In the Properties interface\n Scroll down and select Edit Static website hosting.     In the Static website hosting interface\n Select Enable for Static website hosting Hosting type, select Host a static website Index document, enter index.html    Check again and select Save changes  Complete enable static website hosting feature  "
 },
 {
+	"uri": "/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/",
+	"title": "Test Amazon Cloudfront",
+	"tags": [],
+	"description": "",
+	"content": " Check CloudFront   In the CloudFront interface, select ID   In the Distribution domain name section:  Make sure that CloudFront has been deployed by looking at the content in the Last modified section Select the square symbol to copy the URL     Open another tab and paste the CloudFront URl value in the search bar then press enter  -\u0026gt; Congratulations on successfully deploying Cloudfront to deliver a static website hosted on S3 without requirement for public buckets or objects\nCheck website load time    In step 6 (website check), you have seen that: with Static website hosting function of S3 - travel website needs about 0.614 seconds to load website! So let\u0026rsquo;s see how many seconds the CLoudFront service has reduced this time.\n  At the website interface about tourism, right-click and select Inspect\n   On the top right, select Netword At the top left, select the reload icon   At the URL section of Distribution domain name, you will see that the time column displays a value of 13 ms (milliseconds) = 0.013 seconds (note: this value is only approximate, depending on each time - this time will increase or decrease)   Check the content of this website is being returned from which PoP in 450+ Points of Presence (PoP) globally  Click Distribution domain name Select tab Headers See x-amz-cf-pop, with value SGN50-P1 as Ho Chi Minh City     If you are in Hanoi and doing this lab, the Website content will return from the PoP in Ha Noi where AWS has just deployed in 2022  Summary    Through this lab you have seen 2 great utilities of CloudFront:\n  Distribute the content of a static website hosted on S3 without requirement for Public Bucket or Object -\u0026gt; Increase security\n  Deliver content securely with low latency and fast transfer speeds -\u0026gt; improved Latency by CloudFront will get content at the Edge location closest to the customer\u0026rsquo;s location.\n Although in this lab, the latency is quite low - only milliseconds! But in reality, for websites with a larger amount of information, CloudFront is the solution to help EndUsers quickly access the website, contributing to ensuring a great experience for the end user.      "
+},
+{
 	"uri": "/4-blockpublicaccess/",
 	"title": "Configuring public access block",
 	"tags": [],
@@ -53,21 +74,28 @@
 	"title": "Configuring public objects",
 	"tags": [],
 	"description": "",
-	"content": "Configure public object   In the S3 bucket interface\n Select Permissions     Drag the interface down\n In the Access control list (ACL) section, select bucket owner enforced     In the Object Ownership interface\n Select ACLs enabled Select I acknowledge that ACLs will be restored Select Bucket owner preferred Select Save changes    Finish Editing Object Ownership   Back to the S3 bucket interface\n Select Object Select first square to select all Objects Select Actions Select Make public using ACL     On the Make public page\n Select Make public    Complete public object configuration  "
+	"content": "Configure public object   In the S3 bucket interface\n Select Permissions     Drag the interface down\n In the Access control list (ACL) section, select bucket owner enforced     In the Object Ownership interface\n Select ACLs enabled Select I acknowledge that ACLs will be restored Select Bucket owner preferred Select Save changes    Finish Editing Object Ownership   Back to the S3 bucket interface\n Select Object Select the uploaded Folder. Select Actions Select Make public using ACL     On the Make public page\n Select Make public    Complete public object configuration  "
 },
 {
 	"uri": "/6-testwebsite/",
 	"title": "Test website",
 	"tags": [],
 	"description": "",
-	"content": "Check the website After successful installation and configuration. Next, we will check the website again.\n  Access the created S3 bucket.\n Select Properties     Select Bucket website endpoint\n Scroll to the bottom of the page, click the square icon to copy Bucket website endpoint     Open a new browser tab and paste Bucket website endpoint copied in step 2\n We experience the website interface about tourism    "
+	"content": "Check the website After successful installation and configuration. Next, we will check the website again.\n  Access the created S3 bucket.\n Select Object Select S3-Website-main uploaded folder.    Select index.html  In the index.html details, we will choose Object URL   Open a new browser tab and paste the Object URL of index.html.\n We experience the website interface for tourism    "
 },
 {
-	"uri": "/7-cleanup/",
+	"uri": "/7-cloudfront/",
+	"title": "Accelerate Static Websites with Cloudfront",
+	"tags": [],
+	"description": "",
+	"content": "Introduce Congratulations on hosting a static website - successfully on Amazon S3 service, but need to make your S3 public! So how to host a Static Website on Amazon S3 without publicizing any information about your bucket?\nThis lab will walk you through the steps to host static web content in Amazon S3 bucket , protected and accelerated by Amazon CloudFront . The skills learned will help you ensure your workloads are aligned with the AWS Well-Architected Framework.\nExpense  Usually less than $1 per month (depending on the number of requests) Amazon S3Price Amazon CloudFront Pricing Amazon Price  References  Amazon S3 Amazon CloudFront  Steps to take  Block all public access to S3 ConfigAmazon CloudFront Test CloudFront  "
+},
+{
+	"uri": "/8-cleanup/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
-	"content": "Clean up resources Empty S3 bucket  Go to AWS S3 In the Bucket name list, select the bucket related to the lab. Select Empty In the Empty bucket page, confirm and select Empty  Delete S3 Bucket  Go to AWS S3 Select S3 bucket related to the lab. Select Delete bucket  "
+	"content": "Clean up resources Empty S3 bucket  Go to AWS S3 In the Bucket name list, select the bucket related to the lab. Select Empty In the Empty bucket page, confirm and select Empty  Delete S3 Bucket  Go to AWS S3 Select S3 bucket related to the lab. Select Delete bucket  Delete Cloudfont  Go to Amazon CloudFront Check the box before Distributions ID, in the upper right corner - select Disable, this will take a few minutes. After Disable is complete, select Delete  "
 },
 {
 	"uri": "/categories/",

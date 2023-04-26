@@ -1,24 +1,31 @@
 [
 {
+	"uri": "/vi/7-cloudfront/7.1-block_all_public_access/",
+	"title": "Chặn tất cả truy cập công cộng vào S3",
+	"tags": [],
+	"description": "",
+	"content": "  Trong giao diện S3 bucket\n Chọn Permissions Hiện tại, chức năng Block all public access đang Off do chúng ta đã bật tắt tại bước 4 Chọn Edit   Chọn Block all public access Chọn Save changes   Một cửa số khác xuất hiện để xác nhận việc edit, điền confirm Chọn confirm   Block all public access đã được bật, lúc này sẽ không có bất kỳ một truy cập công cộng nào có thể kết nối được với S3 Bucket của bạn.    Kiểm tra chức năng Block all public access\n Trong giao diện S3 bucket Chọn Properties     Cuộn xuống cuối trang, tại mục Static website hosting Chọn ký hiệu ô vuông để copy URL   Nhấn tổ hợp phím: Ctrl + Shift + N để mở trình duyệt ẩn danh mới (để tránh việc: trình duyệt cache lại trang web trong bước 6) \u0026amp; dán URL đã copy ở trên.  -\u0026gt; Chúc mứng bạn đã Block all public access thành công\n"
+},
+{
 	"uri": "/vi/1-introduce/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
-	"content": "Tổng quan Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.\nS3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào.\nS3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu (dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ.\nAmazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9’s) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.\n"
+	"content": "Tổng quan Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.\nS3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào.\nS3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu ( dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ.\nAmazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9’s) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.\n"
 },
 {
 	"uri": "/vi/",
 	"title": "KHỞI ĐẦU VỚI AMAZON S3",
 	"tags": [],
 	"description": "",
-	"content": "KHỞI ĐẦU VỚI AMAZON S3 Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.\nS3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào.\nS3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu ( dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ.\nAmazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9’s) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.\n Amazon S3   Nội dung  Giới thiệu Chuẩn bị Bật tính năng Static website Cấu hình block public access Cấu hình public object Kiểm tra website Dọn dẹp tài nguyên  "
+	"content": "KHỞI ĐẦU VỚI AMAZON S3 Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.\nS3 được xây để đáp ứng yêu cầu của khách hàng thuộc mọi quy mô và ngành nghề đều có thể dùng dịch vụ này để lưu trữ và bảo vệ bất kỳ lượng dữ liệu nào.\nS3 có thể được dùng cho nhiều trường hợp sử dụng như kho dữ liệu ( dataware house), trang web, ứng dụng di động, sao lưu và khôi phục, lưu trữ, ứng dụng doanh nghiệp, thiết bị IoT và phân tích dữ liệu lớn. Ngoài ra Amazon S3 còn cung cấp các tính năng quản lý dễ sử dụng, nhờ đó bạn có thể tổ chức dữ liệu và cấu hình các biện pháp kiểm soát truy cập để đáp ứng yêu cầu cụ thể của doanh nghiệp, tổ chức và yêu cầu về tuân thủ.\nAmazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11 9’s) và lưu trữ dữ liệu của hàng triệu ứng dụng cho các công ty trên toàn thế giới.\n Amazon S3   Nội dung  Giới thiệu Chuẩn bị Bật tính năng Static website Cấu hình block public access Cấu hình public object Kiểm tra website Tăng tốc Static website host trên S3 Dọn dẹp tài nguyên  "
 },
 {
 	"uri": "/vi/2-prerequiste/2.1-creates3bucket/",
 	"title": "Tạo S3 bucket",
 	"tags": [],
 	"description": "",
-	"content": "Tạo S3 bucket   Đầu tiên, chúng ta sẽ tạo một S3 bucket\n Truy cập AWS Management Console Tìm S3 Chọn S3    Trong giao diện S3, chọn Create bucket   Trong giao diện Create bucket\n Bucket name, nhập aws-first-cloud-journey AWS Region, chọn region bạn muốn. Đối với Object Ownership, chọn ACLs disabled (recommended)    Đối Block Public Access settings for this bucket, để mặc định.  Kiểm tra lại và chọn Create bucket  Hoàn thành tạo S3 bucket lưu trữ source coe website.  "
+	"content": "Tạo S3 bucket   Đầu tiên, chúng ta sẽ tạo một S3 bucket\n Truy cập AWS Management Console Tìm S3 Chọn S3    Trong giao diện S3, chọn Create bucket   Trong giao diện Create bucket\n Bucket name, nhập aws-first-cloud-journey AWS Region, chọn region bạn muốn. Đối với Object Ownership, chọn ACLs disabled (recommended)    Lưu ý: vì Bucket name là duy nhất trên mức độ toàn cầu, nên bạn sử dụng Bucket name y như trên sẽ xuất hiện dòng chữ: \u0026ldquo;Bucket with the same name already exists\u0026rdquo;. Vậy cần thêm vài số phía sau để Bucket name của bạn phù hợp với policy.\nĐối Block Public Access settings for this bucket, để mặc định.  Kiểm tra lại và chọn Create bucket  Hoàn thành tạo S3 bucket lưu trữ source coe website.  "
 },
 {
 	"uri": "/vi/2-prerequiste/",
@@ -26,6 +33,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Các bước chuẩn bị Trong bài lab này, chúng ta thực hiện tạo S3 bucket và sau đó upload dữ liệu lên để chuẩn bị host static website.\n Tạo S3 bucket Tải dữ liệu  "
+},
+{
+	"uri": "/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/",
+	"title": "Cấu hình Amazon CloudFront",
+	"tags": [],
+	"description": "",
+	"content": "Sử dụng bảng điều khiển quản lý AWS, để tạo CloudFront distribution và cấu hình dịch vụ này để phục vụ s3 Bucket mà chúng ta đã tạo trước đó.\n Mở bảng điều khiển Amazon CloudFront tại https://console.aws.amazon.com/cloudfront/home. Từ bảng điều khiển, nhấn vào Create a CloudFront distribution.  Chỉ định các cài đặt sau đây cho bản distribution:   Trong trường Origin domain, chọn S3 bucket mà bạn đã tạo trước đó. Trong trường Origin access, chọn Legacy access identities   Chọn Create new OAI -\u0026gt; giữ nguyên giá trị name \u0026amp; chọn Create với OAI là Origin access identity   Trong trường Bucket policy, chọn Yes, update the bucket policy để AWS tự động updatet quyền cho CloudFront truy suất vào s3 bucket   Cuộn xuống gần cuối trang:   Tại phần Web Application Firewall (WAF) \u0026amp; trong khuôn khổ bài lab này, chọn Do not enable security protections\n  Trong phần Settings,\n Chúng ta sẽ chọn Use North America, Europe, Asia, Middle East, and Africa! Tại phần Default root object - optional, điền index.html là object mà bạn đã upload trong bước 2.2 (Tải dữ liệu)    Giữ nguyên các giá trị mặc định, chọn Create distribution\n    Lưu ý: Trong trường hợp, khách hàng thật tế của bạn ở mức toàn cầu, bạn nên chọn Use all edge locations (best performance) để phân phối tại 450+ Points of Presence(PoP),400+ Edge Locations.\nThông tin CloudFront   Sau khi hoàn thành mục 3 ở trên, AWS sẽ tự động chuyển bạn đến trang thông tin CloudFront như hình dưới, với trạng thái là Deploying  Lưu ý: vui lòng đợi trạng thái này trong vài phút - tùy thuộc vào số lượng edge location mà bạn đã chọn triển khai trong mục 3. Trong lúc này, bạn có thể mở một tab khác để quay lại S3 bucket \u0026amp; xem cloudfront đã thêm các giá trị nào vào bucket policy.\n Trong giao diện S3 bucket, Chọn Permissions   Tại mục Bucket policy, bạn review qua các nội dung quan trọng  "
 },
 {
 	"uri": "/vi/2-prerequiste/2.2-uploaddata/",
@@ -42,6 +56,13 @@
 	"content": "Bật tính năng static website   Tiếp theo chúng ta sẽ bật tính năng static website\n Trong giao diện S3 bucket, chọn Properties     Trong giao diện Properties\n Kéo xuống và chọn Edit Static website hosting.     Trong giao diện Static website hosting\n Chọn Enable đối với Static website hosting Hosting type, chọn Host a static website Index document, nhập index.html    Kiểm tra lại và chọn Save changes  Hoàn thành bật tính năng static website hosting  "
 },
 {
+	"uri": "/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/",
+	"title": "Kiểm tra Amazon CloudFront ",
+	"tags": [],
+	"description": "",
+	"content": " Kiểm tra CloudFront   Trong giao diện CloudFront, chọn ID   Tại mục Distribution domain name:  Đảm bảo rằng CloudFront đã deploy xong bằng cách xem nội dung ở mục Last modified Chọn ký hiệu ô vuông để copy URL     Bật một tab khác và dán giá trị CloudFront URl vào thanh tìm kiếm rồi nhấn enter  -\u0026gt; Chúc mừng bạn đã triển khai thành công Cloudfront để phân phối một website tĩnh được host trên S3 mà không cần phải public bucket hay object\nKiểm tra thời gian load website    Trong bước 6 (kiểm tra website), bạn đã thấy rằng: với chức năng Static website hosting của S3 - trang web du lịch cần khoảng 0.614 giây để load website! Vậy hãy cùng xem dịch vụ CLoudFront đã giúp giảm thời gian này còn bao nhiêu giây.\n  Tại giao diện website về du lịch, nhấp chuột phải và chọn Inspect\n   Phái trên cùng bên phải, chọn Netword Phía trên cùng bên trái, chọn biểu tượng reload   Tại mục URL của Distribution domain name, bạn sẽ thấy cột thời gian hiển thị giá trị là 13 ms (milliseconds) = 0.013 giây (lưu ý: giá trị này chỉ mang tính tương đối, tùy thuộc từng thời điểm - thời gian này sẽ tăng hoặc giảm)   Kiểm tra xem nội dung của website này đang được trả về từ PoP nào trong 450+ Points of Presence (PoP) trên toàn cầu  Nhấp vào Distribution domain name Chọn tab Headers Xem x-amz-cf-pop, với giá trị SGN50-P1 là Ho Chi Minh City     Nếu bạn đang ở Hà Nội và thực hiện bài lab này, nội dung Website sẽ trả về từ PoP tại Ha Noi nơi mà AWS vừa triển khai trong năm 2022  Tóm tắt    Vậy qua bài lab này bạn đã thấy được 2 tiện ích rất tuyệt vời của CloudFront:\n  Phân phối nội dung của một website tĩnh được host trên S3 mà không cần phải Public Bucket hay Object -\u0026gt; Tăng tính security\n  Phân phối nội dung với độ trễ thấp và tốc độ truyền nhanh chóng -\u0026gt; cải thiện Latency bằng cách CloudFront sẽ lấy nội dung ở Edge location nào gần với địa điểm của khách hàng nhất.\n Dù trong bài lab này, độ trễ khá thấp - chỉ ở mức milliseconds! Nhưng trong thật tế, với các website có lượng thông tin lớn hơn thì CloudFront là giải pháp giúp EndUser truy cập nhanh chóng vào trang web, góp phần đảm bảo trải nghiệm tốt đẹp của người dùng cuối.      "
+},
+{
 	"uri": "/vi/4-blockpublicaccess/",
 	"title": "Cấu hình block public access",
 	"tags": [],
@@ -53,21 +74,28 @@
 	"title": "Cấu hình public object",
 	"tags": [],
 	"description": "",
-	"content": "Cấu hình public object   Trong giao diện S3 bucket\n Chọn Permissions     Kéo giao diện xuống\n Trong phần Access control list (ACL), chọn bucket owner enforced     Trong giao diện Object Ownership\n Chọn ACLs enabled Chọn I acknowledge that ACLs will be restored Chọn Bucket owner preferred Chọn Save changes    Hoàn thành chỉnh sửa Object Ownership   Quay lại giao diện S3 bucket\n Chọn Objects Chọn ô vuông đầu tiên để chọn tất cả Objects Chọn Actions Chọn Make public using ACL     Trong trang Make public\n Chọn Make public    Hoàn thành cấu hình public object  "
+	"content": "Cấu hình public object   Trong giao diện S3 bucket\n Chọn Permissions     Kéo giao diện xuống\n Trong phần Access control list (ACL), chọn bucket owner enforced     Trong giao diện Object Ownership\n Chọn ACLs enabled Chọn I acknowledge that ACLs will be restored Chọn Bucket owner preferred Chọn Save changes    Hoàn thành chỉnh sửa Object Ownership   Quay lại giao diện S3 bucket\n Chọn Object Chọn Folder đã tải lên. Chọn Actions Chọn Make public using ACL     Trong trang Make public\n Chọn Make public    Hoàn thành cấu hình public object  "
 },
 {
 	"uri": "/vi/6-testwebsite/",
 	"title": "Kiểm tra website",
 	"tags": [],
 	"description": "",
-	"content": "Kiểm tra website Sau khi cài đặt và cấu hình thành công. Tiếp theo chúng ta sẽ kiểm tra lại website.\n  Truy cập vào S3 bucket đã tạo.\n Chọn Properties     Chọn Bucket website endpoint\n Cuộn xuống cuối trang, nhấp vào biểu tượng ô vuông để copy Bucket website endpoint     Mở tab trình duyệt mới và dán Bucket website endpoint vừa copy ở bước 2\n Chúng ta trải nghiệm giao diện website về du lịch    "
+	"content": "Kiểm tra website Sau khi cài đặt và cấu hình thành công. Tiếp theo chúng ta sẽ kiểm tra lại website.\n  Truy cập vào S3 bucket đã tạo.\n Chọn Object Chọn S3-Website-main folder đã tải lên.    Chọn index.html  Trong thông tin chi tiết về index.html, chúng ta sẽ chọn Object URL   Mở tab trình duyệt mới và dán Object URL của index.html vào.\n Chúng ta trải nghiệm giao diện website về du lịch    Kiểm tra thời gian load website    Để thấy rõ vai trò của CloudFront trong việc phân phối nội dung với độ trễ thấp và tốc độ truyền nhanh chóng, chúng ta sẽ tiến hành kiểm tra thời gian load webiste tĩnh được host trên S3 \u0026amp; tiến hành bước thứ 7 để thấy rõ sự khác biệt về thời gian.\n  Tại giao diện website về du lịch, nhấp chuột phải và chọn Inspect\n   Phái trên cùng bên phải, chọn Netword Phía trên cùng bên trái, chọn biểu tượng reload   Tại mục URL của Bucket website endpoint, bạn sẽ thấy cột thời gian hiển thị giá trị là 614 ms (milliseconds) = 0.614 giây (lưu ý: giá trị này chỉ mang tính tương đối, tùy thuộc từng thời điểm - thời gian này sẽ tăng hoặc giảm)  "
 },
 {
-	"uri": "/vi/7-cleanup/",
+	"uri": "/vi/7-cloudfront/",
+	"title": "Tăng tốc Static Website với Cloudfront",
+	"tags": [],
+	"description": "",
+	"content": "Giới thiệu Chúc mừng bạn đã host một trang web tĩnh - thành công trên dịch vụ Amazon S3, nhưng cần phải public S3 của bạn! Vậy làm sao để host một Static Website trên Amazon S3 mà không cần public bất kỳ thông tin nào về bucket của bạn?\nBài lab này sẽ hướng dẫn bạn các bước để lưu trữ nội dung web tĩnh trong Amazon S3 bucket , được bảo vệ và tăng tốc bởi Amazon CloudFront . Các kỹ năng học được sẽ giúp bạn đảm bảo khối lượng công việc của mình phù hợp với AWS Well-Architected Framework.\nChi phí  Thường ít hơn $ 1 mỗi tháng (tùy thuộc vào số lượng request) Giá Amazon S3 Giá Amazon CloudFront Giá Amazon  Tài liệu tham khảo  Amazon S3 Amazon CloudFront  Các bước thực hiện  Chặn tất cả truy cập công cộng vào S3 Cấu hình Amazon CloudFront Kiểm tra CloudFront  "
+},
+{
+	"uri": "/vi/8-cleanup/",
 	"title": "Dọn dẹp tài nguyên",
 	"tags": [],
 	"description": "",
-	"content": "Dọn dẹp tài nguyên Empty S3 bucket  Truy cập AWS S3 Trong danhs sách Bucket name, chọn bucket liên quan bài lab. Chọn Empty Trong trang Empty bucket, xác nhận và chọn Empty  Xóa S3 Bucket  Truy cập vào AWS S3 Chọn S3 bucket liên quan bài lab. Chọn Delete bucket  "
+	"content": "Dọn dẹp tài nguyên Empty S3 bucket  Truy cập AWS S3 Trong danhs sách Bucket name, chọn bucket liên quan bài lab. Chọn Empty Trong trang Empty bucket, xác nhận và chọn Empty  Xóa S3 Bucket  Truy cập vào AWS S3 Chọn S3 bucket liên quan bài lab. Chọn Delete bucket  Xóa Cloudfonrt  Truy cập vào Amazon CloudFront Tích vào ô vuông trước Distributions ID, trên góc phải - chọn Disable, quá trình này sẽ mất vài phút Sau khi Disable hoàn tất, chọn Delete  "
 },
 {
 	"uri": "/vi/categories/",

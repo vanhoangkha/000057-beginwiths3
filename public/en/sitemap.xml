@@ -2,6 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/7-cloudfront/7.1-block_all_public_access/</loc>
+    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/7-cloudfront/7.1-block_all_public_access/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/7-cloudfront/7.1-block_all_public_access/"
+                />
+  </url><url>
+    <loc>/</loc>
+    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url><url>
     <loc>/2-prerequiste/2.1-creates3bucket/</loc>
     <xhtml:link
                 rel="alternate"
@@ -26,16 +52,16 @@
                 href="/1-introduce/"
                 />
   </url><url>
-    <loc>/</loc>
+    <loc>/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/"
                 />
   </url><url>
     <loc>/2-prerequiste/2.2-uploaddata/</loc>
@@ -74,6 +100,18 @@
                 href="/3-staticwebsite/"
                 />
   </url><url>
+    <loc>/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/"
+                />
+  </url><url>
     <loc>/4-blockpublicaccess/</loc>
     <xhtml:link
                 rel="alternate"
@@ -110,16 +148,29 @@
                 href="/6-testwebsite/"
                 />
   </url><url>
-    <loc>/7-cleanup/</loc>
+    <loc>/7-cloudfront/</loc>
+    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-cleanup/"
+                href="/vi/7-cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-cleanup/"
+                href="/7-cloudfront/"
+                />
+  </url><url>
+    <loc>/8-cleanup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/8-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/8-cleanup/"
                 />
   </url><url>
     <loc>/categories/</loc>

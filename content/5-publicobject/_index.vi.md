@@ -35,18 +35,18 @@ pre : " <b> 5. </b> "
 
 5. Quay lại giao diện S3 bucket
 
-    - Chọn **Objects**
-    - Chọn **ô vuông đầu tiên** để chọn tất cả Objects
+    - Chọn **Object**
+    - Chọn **Folder** đã tải lên.
     - Chọn **Actions**
     - Chọn **Make public using ACL**
 
-![Public Object](/images/5-publicobject/0005'.png?featherlight=false&width=90pc)
+![Public Object](/images/5-publicobject/0005.png?featherlight=false&width=90pc)
 
 6. Trong trang **Make public**
 
    - Chọn **Make public**
 
-![Public Object](/images/5-publicobject/0006'.png?featherlight=false&width=90pc)
+![Public Object](/images/5-publicobject/0006.png?featherlight=false&width=90pc)
 
 7. Hoàn thành cấu hình **public object**
 
