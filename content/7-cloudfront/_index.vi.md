@@ -1,9 +1,9 @@
 ---
-title : "Tăng tốc Static Website với Cloudfront"
-date :  "`r Sys.Date()`" 
-weight : 7
-chapter : false
-pre : " <b> 7. </b> "
+title: "Tăng tốc Static Website với Cloudfront"
+date: "`r Sys.Date()`"
+weight: 7
+chapter: false
+pre: " <b> 7. </b> "
 ---
 
 #### Giới thiệu

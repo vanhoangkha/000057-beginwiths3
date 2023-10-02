@@ -1,9 +1,9 @@
 ---
 title : "Dọn dẹp tài nguyên"
 date :  "`r Sys.Date()`" 
-weight : 8
+weight : 11
 chapter : false
-pre : " <b> 8. </b> "
+pre : " <b> 11. </b> "
 ---
 
 #### Dọn dẹp tài nguyên
@@ -11,7 +11,7 @@ pre : " <b> 8. </b> "
 #### Empty S3 bucket
 
 1. Truy cập **[AWS S3](https://console.aws.amazon.com/s3/)**
-2. Trong danhs sách **Bucket name**, chọn bucket liên quan bài lab.
+2. Trong danh sách **Bucket name**, chọn bucket liên quan bài lab.
 3. Chọn **Empty**
 4. Trong trang **Empty bucket**, xác nhận và chọn **Empty**
 

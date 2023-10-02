@@ -8,7 +8,7 @@ pre : " <b> 7.2 </b> "
 
 Use the AWS management console, to create a **CloudFront distribution** and configure this service to serve the **S3 Bucket** we created earlier.
 
-1. Open the Amazon CloudFront console at https://console.aws.amazon.com/cloudfront/home.
+1. Open the Amazon CloudFront console at https://console.aws.amazon.com/cloudfront/home
 2. From the dashboard, click **Create a CloudFront distribution**.
 
   ![CF](/images/cf/7.2/0001.png?featherlight=false&width=90pc)

@@ -8,7 +8,7 @@ pre : " <b> 7.2 </b> "
 
 Sử dụng bảng điều khiển quản lý AWS, để tạo **CloudFront distribution** và cấu hình dịch vụ này để phục vụ **s3 Bucket** mà chúng ta đã tạo trước đó.
 
-1. Mở bảng điều khiển Amazon CloudFront tại https://console.aws.amazon.com/cloudfront/home.
+1. Mở bảng điều khiển Amazon CloudFront tại https://console.aws.amazon.com/cloudfront/home
 2. Từ bảng điều khiển, nhấn vào **Create a CloudFront distribution**.
 
  ![CF](/images/cf/7.2/0001.png?featherlight=false&width=90pc)

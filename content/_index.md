@@ -19,10 +19,14 @@ Amazon S3 is designed for 99.999999999% (11 9's) endurance and stores the data o
 {{< figure src="../images/serviceicon.png" title="Amazon S3" width=150pc >}}
 #### Content
 
-1. [Introduction](1-introduce/)
-2. [Preparation](2-prerequiste/)
-3. [Enable Static website](3-staticwebsite/)
-4. [Configure public access block](4-blockpublicaccess/)
-5. [Configure public object](5-publicobject/)
-6. [Test website](6-testwebsite/)
-7. [Resource Cleanup](7-cleanup/)
+1.  [Introduction](1-introduce/)
+2.  [Preparation](2-prerequiste/)
+3.  [Enable Static website](3-staticwebsite/)
+4.  [Configure public access block](4-blockpublicaccess/)
+5.  [Configure public object](5-publicobject/)
+6.  [Test website](6-testwebsite/)
+7.  [Speed ​​up Static website host on S3](7-cloudfront/)
+8.  [Bucket Versioning](8-moveobject/)
+9.  [Move Object](9-moveobject/)
+10. [Replication Oject multi Region](10-S3CCR/)
+11. [Clean up](11-cleanup/)

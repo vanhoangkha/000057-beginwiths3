@@ -20,11 +20,14 @@ Amazon S3 được thiết kế để đảm bảo độ bền 99,999999999% (11
 
 #### Nội dung
 
-1. [Giới thiệu](1-introduce/)
-2. [Chuẩn bị](2-prerequiste/)
-3. [Bật tính năng Static website](3-staticwebsite/)
-4. [Cấu hình block public access](4-blockpublicaccess/)
-5. [Cấu hình public object](5-publicobject/)
-6. [Kiểm tra website](6-testwebsite/)
-7. [Tăng tốc Static website host trên S3](7-cloudfront/)
-8. [Dọn dẹp tài nguyên](7-cleanup/)
+1.  [Giới thiệu](1-introduce/)
+2.  [Chuẩn bị](2-prerequiste/)
+3.  [Bật tính năng Static website](3-staticwebsite/)
+4.  [Cấu hình block public access](4-blockpublicaccess/)
+5.  [Cấu hình public object](5-publicobject/)
+6.  [Kiểm tra website](6-testwebsite/)
+7.  [Tăng tốc Static website host trên S3](7-cloudfront/)
+8.  [Tính năng Bucket Versioning](8-moveobject/)
+9.  [Di chuyển Object](9-moveobject/)
+10. [Sao chép S3 Object sang region khác](10-S3CCR/)
+11. [Dọn dẹp tài nguyên](11-cleanup/)

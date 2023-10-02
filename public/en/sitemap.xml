@@ -161,16 +161,52 @@
                 href="/7-cloudfront/"
                 />
   </url><url>
-    <loc>/8-cleanup/</loc>
+    <loc>/8-versioning/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/8-cleanup/"
+                href="/vi/8-versioning/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/8-cleanup/"
+                href="/8-versioning/"
+                />
+  </url><url>
+    <loc>/9-moveobject/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/9-moveobject/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/9-moveobject/"
+                />
+  </url><url>
+    <loc>/10-s3ccr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/10-s3ccr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/10-s3ccr/"
+                />
+  </url><url>
+    <loc>/11-cleanup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/11-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/11-cleanup/"
                 />
   </url><url>
     <loc>/categories/</loc>

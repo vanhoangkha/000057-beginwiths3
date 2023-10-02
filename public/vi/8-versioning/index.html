@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="description" content="">
+<meta name="author" content="journeyoftheaverageguy@gmail.com">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Bucket Versioning :: Khởi đầu với Amazon S3</title>
+
+    
+    <link href="/css/nucleus.css?1696247200" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1696247200" rel="stylesheet">
+    <link href="/css/hybrid.css?1696247200" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1696247200" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1696247200" rel="stylesheet">
+    <link href="/css/auto-complete.css?1696247200" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1696247200" rel="stylesheet">
+    <link href="/css/theme.css?1696247200" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1696247200" rel="stylesheet">
+    
+    <link href="/css/theme-workshop.css?1696247200" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1696247200"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/vi/8-versioning/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1696247200"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1696247200"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/vi";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1696247200"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/1-introduce/">
+           <b> 1. </b> Giới thiệu
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/" title="Các bước chuẩn bị" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/2-prerequiste/">
+           <b> 2. </b> Các bước chuẩn bị
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.1-creates3bucket/" title="Tạo S3 bucket" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/2-prerequiste/2.1-creates3bucket/">
+           <b> 2.1 </b> Tạo S3 bucket
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.2-uploaddata/" title="Tải dữ liệu" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/2-prerequiste/2.2-uploaddata/">
+           <b> 2.2 </b> Tải dữ liệu
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-staticwebsite/" title="Bật tính năng static website" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/3-staticwebsite/">
+           <b> 3. </b> Bật tính năng static website
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-blockpublicaccess/" title="Cấu hình block public access" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/4-blockpublicaccess/">
+           <b> 4. </b> Cấu hình block public access
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-publicobject/" title="Cấu hình public object" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/5-publicobject/">
+           <b> 5. </b> Cấu hình public object
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-testwebsite/" title="Kiểm tra website" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/6-testwebsite/">
+           <b> 6. </b> Kiểm tra website
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-cloudfront/" title="Tăng tốc Static Website với Cloudfront" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/7-cloudfront/">
+           <b> 7. </b> Tăng tốc Static Website với Cloudfront
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-cloudfront/7.1-block_all_public_access/" title="Chặn tất cả truy cập công cộng vào S3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/7-cloudfront/7.1-block_all_public_access/">
+           <b> 7.1 </b> Chặn tất cả truy cập công cộng vào S3
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/" title="Cấu hình Amazon CloudFront" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/">
+           <b> 7.2 </b> Cấu hình Amazon CloudFront
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/" title="Kiểm tra Amazon CloudFront " class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/">
+           <b> 7.3 </b> Kiểm tra Amazon CloudFront 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/8-versioning/" title="Bucket Versioning" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/vi/8-versioning/">
+           <b> 8. </b> Bucket Versioning
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/9-moveobject/" title="Di chuyển Object" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/9-moveobject/">
+           <b> 9. </b> Di chuyển Object
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/10-s3ccr/" title="Sao chép S3 Object sang region khác" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/10-s3ccr/">
+           <b> 10. </b> Sao chép S3 Object sang region khác
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/11-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/11-cleanup/">
+           <b> 11. </b> Dọn dẹp tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="/8-versioning/">English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="/vi/8-versioning/" selected>Tiếng Việt</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    
+     <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7875438&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
+</left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>02-10-2023</font></i>
+    </left>
+    <left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+            <i> <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng </a> <br>
+        </i>
+        </left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/vi/'>KHỞI ĐẦU VỚI AMAZON S3</a> > Bucket Versioning
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Bucket Versioning
+            </h1>
+          
+
+        
+
+
+
+	<h4 id="giới-thiệu">Giới thiệu</h4>
+<ul>
+<li>
+<p>Tính năng <strong>Versioning</strong> trong <strong>Amazon S3</strong> là một phương thức để giữ nhiều phiên bản của một <strong>object</strong> trong cùng một <strong>bucket</strong>.</p>
+</li>
+<li>
+<p>Bạn có thể sử dụng tính năng <strong>versioning</strong> của S3 để bảo toàn, truy xuất và khôi phục mọi phiên bản của mọi <strong>object</strong> được lưu trữ trong <strong>bucket</strong> của bạn.</p>
+</li>
+<li>
+<p>Với tính năng <strong>versioning</strong>, bạn có thể khôi phục dễ dàng hơn sau những hành động ngoài ý muốn của người dùng hoặc lỗi ứng dụng. <strong>Versioning</strong> hỗ trợ tạo lập các phiên bản, giúp bạn khôi phục các <strong>object</strong> khỏi việc vô tình xóa bỏ hoặc ghi đè.</p>
+</li>
+<li>
+<p>Sau khi tính năng <strong>versioning</strong> được enable cho <strong>bucket</strong> của bạn, nếu <strong>Amazon S3</strong> nhận được nhiều <strong>request</strong> <strong>write</strong> cùng lúc cho cùng một <strong>object</strong> thì nó sẽ lưu trữ tất cả các <strong>object</strong> đó.</p>
+</li>
+</ul>
+<p><img src="/images/8'-versioning/0000.png?featherlight=false&amp;width=20pc" alt="Static website"></p>
+<ol>
+<li>
+<p>Bật tính năng <strong>versioning</strong> của <strong>bucket</strong></p>
+<ul>
+<li>
+<p>Trong giao diện <strong>S3 bucket</strong>, chọn bucket name <code>aws-first-cloud-journey</code></p>
+</li>
+<li>
+<p>Chọn mục <strong>Properties</strong>, tại mục Bucket Versioning, chọn <strong>Edit</strong></p>
+</li>
+</ul>
+<p><img src="/images/8'-versioning/0001.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Tại mục <strong>Bucket Versioning</strong>, chọn <strong>Enable</strong>, chọn <strong>Save changes</strong></li>
+</ul>
+<p><img src="/images/8'-versioning/0002.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+</li>
+<li>
+<p>Thay đổi nội dung trên file <strong>index.html</strong></p>
+<ul>
+<li>
+<p>Bật cửa sổ chứa các <strong>folder</strong>, <strong>file</strong> đã down về và giải nén ở <a href="https://000057.awsstudygroup.com/vi/2-prerequiste/2.2-uploaddata/">lab 2.2</a></p>
+</li>
+<li>
+<p>Chọn file <strong>index.html</strong> -&gt; nhấn chuột phải -&gt; chọn <strong>Open with</strong> -&gt; chọn <strong>Notepad</strong></p>
+</li>
+</ul>
+<p><img src="/images/8'-versioning/0003.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>
+<p>Cuộn xuống giữa trang, tại tag <strong>body</strong>, thay giá trị <strong>AWS First Cloud Journey</strong> bằng một nội dung khác, VD: <code>HỌC CLOUD ^^ VUI BIẾT BAO &lt;3</code></p>
+</li>
+<li>
+<p>Trước khi edit:</p>
+</li>
+</ul>
+<p><img src="/images/8'-versioning/0004.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Sau khi edit:</li>
+</ul>
+<p><img src="/images/8'-versioning/0005.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Bấm tổ hợp phím: <strong>Ctrl với S</strong> để lưu nội dung vừa edit trên file index.html</li>
+</ul>
+</li>
+<li>
+<p>Test tính năng <strong>versioning</strong> trên <strong>S3</strong></p>
+<ul>
+<li>
+<p>Tại giao diện S3 bucket <strong>AWS First Cloud Journey</strong>, chọn <strong>Upload</strong></p>
+</li>
+<li>
+<p>Upload file <strong>index.html</strong> vừa edit vào bucket <strong>AWS First Cloud Journey</strong> bằng cách kéo - thả</p>
+</li>
+</ul>
+<p><img src="/images/8'-versioning/0006.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Tại giao diện <strong>Upload</strong>, file index.html trong mục <strong>Files and folders</strong>, cuộn xuống cuối trang và chọn <strong>Upload</strong></li>
+</ul>
+<p><img src="/images/8'-versioning/0007.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Việc <strong>upload</strong> file đã hoàn tất, chọn <strong>Close</strong> để quay về giao diện <strong>bucket</strong></li>
+</ul>
+<p><img src="/images/8'-versioning/0008.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Tại khung search, gõ <code>index.html</code> và nhấn enter, lúc này bạn sẽ thấy bucket chỉ hiện ra duy nhất một object. Chuyển nút tròn của <strong>Show versions</strong> từ trái sang phải để thấy version của file.</li>
+</ul>
+<p><img src="/images/8'-versioning/0009.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Lúc này bạn đã thấy có <strong>2</strong> file index.html, với thời gian modify của object phía trên gần với thời điểm hiện tại hơn object phía dưới</li>
+</ul>
+<p><img src="/images/8'-versioning/00010.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+</li>
+<li>
+<p>Test tính năng <strong>versioning</strong> trên <strong>Cloudfront</strong></p>
+<ul>
+<li>Trong bước <a href="https://000057.awsstudygroup.com/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/">7.3 Kiểm tra Amazon CloudFront</a>, bạn đã tăng tốc website bằng Cloudfront và thực hiện kiểm tra <strong>Distribution domain name</strong> với nội dung: <strong>AWS FIRST CLOUD JOURNEY</strong></li>
+</ul>
+<p><img src="/images/8'-versioning/00011.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>
+<p>Vậy hãy xem <strong>Default root object</strong> với file <code>index.html</code> vừa được upload version mới hơn trên S3 thì nội dung có thay đổi tương ứng với bước 2 ở phía trên hay không!</p>
+</li>
+<li>
+<p>Mở bảng điều khiển Amazon CloudFront tại <a href="https://console.aws.amazon.com/cloudfront/home">https://console.aws.amazon.com/cloudfront/home</a></p>
+</li>
+<li>
+<p>Chọn Distributions ID hiện tại</p>
+</li>
+</ul>
+<p><img src="/images/8'-versioning/00012.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Chọn mục <strong>Behaviors</strong>, chọn dấu tích tròn, chọn <strong>Edit</strong></li>
+</ul>
+<p><img src="/images/8'-versioning/00013.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Tại Cache key and origin requests, chọn <strong>Legacy cache settings</strong></li>
+<li>Tại mục Object caching, chọn <strong>Customize</strong></li>
+<li>Tại mục Maximum TTL, điền giá tị mới: <code>0</code></li>
+<li>Tại mụch Default TTL, điền giá tị mới: <code>0</code></li>
+<li>Cuộn xuống cuối trang, chọn <strong>Save changes</strong></li>
+<li>-&gt; Điều này sẽ giúp Cloudfront thường xuyên cập nhật các thay đổi từ S3 trong khuôn khổ bài lab này</li>
+</ul>
+<p><img src="/images/8'-versioning/00014.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Bạn cần đợi vài phút để trạng thái chuyển từ <strong>Deploying</strong> sang thời gian lần cuối cùng modify</li>
+</ul>
+<p><img src="/images/8'-versioning/00015.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img src="/images/8'-versioning/00016'.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Sau đó, bạn hãy sao chép Domain name vào trình duyệt để xem nội dung đã thay đổi</li>
+</ul>
+<p><img src="/images/8'-versioning/00016.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>
+<p>Tuy nhiên, vào lúc này, bạn muốn nhanh chóng <strong>restore</strong> (khôi phục) lại nội dung cũ mà không cần phải edit file index.html dưới máy local - thì chỉ cần xóa version mới nhất của object: index.html trên S3 bucket</p>
+</li>
+<li>
+<p>Trong giao diện S3 bucket <strong>aws-first-cloud-journey</strong>, tại khung search - bạn nhập <code>index.html</code> rồi enter, chọn <strong>Show versions</strong>.</p>
+</li>
+</ul>
+<p><img src="/images/8'-versioning/00017.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Tích vào ký hiệu ô vuông ở phía đầu của object index.html phía trên, chọn <strong>Delete</strong></li>
+</ul>
+<p><img src="/images/8'-versioning/00018.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Kiểm tra đúng file cần xóa -&gt; nhập <code>permanently delete</code> vào khung -&gt; chọn <strong>Delete objects</strong></li>
+</ul>
+<p><img src="/images/8'-versioning/00019.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<ul>
+<li>Tại trang trình duyệt đang chạy Domain name của CloudFront, nhấn phím F5 để refesh trang, bạn sẽ nhận được giá trị cũ: <strong>AWS FIRST CLOUD JOURNEY</strong></li>
+</ul>
+<p><img src="/images/8'-versioning/00020.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+</li>
+</ol>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/" title="Kiểm tra Amazon CloudFront "> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/vi/9-moveobject/" title="Di chuyển Object" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1696247201"></script>
+    <script src="/js/perfect-scrollbar.min.js?1696247201"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1696247201"></script>
+    <script src="/js/jquery.sticky.js?1696247201"></script>
+    <script src="/js/featherlight.min.js?1696247201"></script>
+    <script src="/js/highlight.pack.js?1696247201"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1696247201"></script>
+    <script src="/js/learn.js?1696247201"></script>
+    <script src="/js/hugo-learn.js?1696247201"></script>
+
+    <link href="/mermaid/mermaid.css?1696247201" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1696247201"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
