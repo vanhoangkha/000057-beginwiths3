@@ -1,50 +1,46 @@
 ---
-title : "Kiểm tra website"
-date :  "`r Sys.Date()`" 
-weight : 6
-chapter : false
-pre : " <b> 6. </b> "
+title: "Kiểm Tra Website"
+date: "`r Sys.Date()`"
+weight: 6
+chapter: false
+pre: "<b> 6. </b>"
 ---
 
-#### Kiểm tra website
+### Kiểm Tra Website
 
-Sau khi cài đặt và cấu hình thành công. Tiếp theo chúng ta sẽ kiểm tra lại website.
+Sau khi cài đặt và cấu hình thành công, bước tiếp theo là kiểm tra lại website.
 
-1. Truy cập vào **S3** bucket đã tạo.
+1. **Truy cập vào S3 bucket đã tạo:**
+    - Chọn **Object**.
+    - Chọn thư mục **S3-Website-main** đã tải lên.
 
-    - Chọn **Object**
-    - Chọn **S3-Website-main** folder đã tải lên.
+   ![Website](/images/6-website/0001.png?featherlight=false&width=90pc)
 
-![Website](/images/6-website/0001.png?featherlight=false&width=90pc)
+2. **Chọn file `index.html`:**
 
-2. Chọn **index.html**
+   ![Website](/images/6-website/0002.png?featherlight=false&width=90pc)
 
-![Website](/images/6-website/0002.png?featherlight=false&width=90pc)
+3. **Tìm thông tin chi tiết của `index.html`:**
+    - Chọn **Object URL**.
 
-3. Trong thông tin chi tiết về **index.html**, chúng ta sẽ chọn **Object URL**
+   ![Website](/images/6-website/0003.png?featherlight=false&width=90pc)
 
-![Website](/images/6-website/0003.png?featherlight=false&width=90pc)
+4. **Mở URL trong tab mới của trình duyệt:**
+    - Trải nghiệm giao diện website du lịch.
 
-4. Mở tab trình duyệt mới và dán **Object URL** của **index.html** vào.
+   ![Website](/images/6-website/0004.png?featherlight=false&width=90pc)
 
-   - Chúng ta trải nghiệm giao diện website về du lịch
+5. **Kiểm tra thời gian tải trang:**
+    - Mục đích là nhận thấy ảnh hưởng của CloudFront trong việc giảm độ trễ và tăng tốc độ tải trang.
+    - Mở giao diện website du lịch, click chuột phải và chọn **Inspect**.
 
+   ![Website](/images/6-website/0005'.png?featherlight=false&width=90pc)
 
-![Website](/images/6-website/0004.png?featherlight=false&width=90pc)
+    - Ở góc trên cùng bên phải, chọn **Network**.
+    - Ở góc trên cùng bên trái, chọn biểu tượng **reload**.
 
-5. Kiểm tra thời gian load website
+   ![Website](/images/6-website/0007'.png?featherlight=false&width=90pc)
 
-- Để thấy rõ vai trò của CloudFront trong việc phân phối nội dung với độ trễ thấp và tốc độ truyền nhanh chóng, chúng ta sẽ tiến hành kiểm tra thời gian load webiste tĩnh được host trên S3 & tiến hành bước thứ 7 để thấy rõ sự khác biệt về thời gian.
+    - Trong thông tin URL của Bucket website endpoint, thời gian hiển thị là 614 ms (0.614 giây). Lưu ý: giá trị này chỉ mang tính chất tương đối.
 
-- Tại giao diện website về du lịch, nhấp chuột phải và chọn **Inspect**
-
-![Website](/images/6-website/0005'.png?featherlight=false&width=90pc)
-
-- Phái trên cùng bên phải, chọn **Netword**
-- Phía trên cùng bên trái, chọn biểu tượng **reload**
-
-![Website](/images/6-website/0007'.png?featherlight=false&width=90pc)
-
-- Tại mục URL của Bucket website endpoint, bạn sẽ thấy cột thời gian hiển thị giá trị là 614 ms (milliseconds)  = 0.614 giây (lưu ý: giá trị này chỉ mang tính tương đối, tùy thuộc từng thời điểm - thời gian này sẽ tăng hoặc giảm)
-
-![Website](/images/6-website/0008.png?featherlight=false&width=90pc)
+   ![Website](/images/6-website/0008.png?featherlight=false&width=90pc)
