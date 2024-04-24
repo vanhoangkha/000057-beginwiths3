@@ -92,8 +92,8 @@ pre: " <b> 8. </b> "
 
    - At Cache key and origin requests, select **Legacy cache settings**
    - In the Object caching section, select **Customize**
-   - In the Maximum TTL section, enter the new value: `0`
-   - In the Default TTL section, enter the new value: `0`
+   - In the Maximum TTL section, enter the new value: `1`
+   - In the Default TTL section, enter the new value: `1`
    - Scroll to the bottom of the page, select **Save changes**
    - -> This will help Cloudfront regularly update changes from S3 within the framework of this lab
 

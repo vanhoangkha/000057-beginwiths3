@@ -75,7 +75,7 @@ Tính năng **Versioning** trong **Amazon S3** cho phép lưu trữ nhiều phi�
 
   ![Static website](/images/8'-versioning/00013.png?featherlight=false&width=90pc)
 
-- Tại **Cache key and origin requests**, chọn **Legacy cache settings**. Tại mục **Object caching**, chọn **Customize** và cài đặt **Maximum TTL** và **Default TTL** là `0`. Sau đó chọn **Save changes**.
+- Tại **Cache key and origin requests**, chọn **Legacy cache settings**. Tại mục **Object caching**, chọn **Customize** và cài đặt **Maximum TTL** và **Default TTL** là `1`. Sau đó chọn **Save changes**.
 
   ![Static website](/images/8'-versioning/00014.png?featherlight=false&width=90pc)
 
