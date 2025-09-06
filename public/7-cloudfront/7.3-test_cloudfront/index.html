@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/proxy/8000/images/favicon.png" type="image/png">
 
-    <title>Move objects :: Start with Amazon S3</title>
+    <title>Test Amazon Cloudfront :: Start with Amazon S3</title>
 
     
     <link href="/proxy/8000/css/nucleus.css?1757186767" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/proxy/8000/9-moveobject/">
+  <body class="" data-url="/proxy/8000/7-cloudfront/7.3-test_cloudfront/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -307,7 +307,7 @@
   
     
     <li data-nav-id="/proxy/8000/7-cloudfront/" title="Accelerate Static Websites with Cloudfront" class="dd-item 
-        
+        parent
         
         
         ">
@@ -395,7 +395,7 @@
     
     <li data-nav-id="/proxy/8000/7-cloudfront/7.3-test_cloudfront/" title="Test Amazon Cloudfront" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/proxy/8000/7-cloudfront/7.3-test_cloudfront/">
@@ -456,7 +456,7 @@
     
     <li data-nav-id="/proxy/8000/9-moveobject/" title="Move objects" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/proxy/8000/9-moveobject/">
@@ -585,7 +585,7 @@
                   
                     
                     
-                      <option id="en" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/9-moveobject/" selected>English</option>
+                      <option id="en" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/7.3-test_cloudfront/" selected>English</option>
                     
                   
               
@@ -599,7 +599,7 @@
                   
                     
                     
-                      <option id="vi" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/9-moveobject/">Tiếng Việt</option>
+                      <option id="vi" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/7-cloudfront/7.3-test_cloudfront/">Tiếng Việt</option>
                     
                   
               
@@ -684,7 +684,13 @@
             
           
           
-            <a href='/proxy/8000/'>START WITH AMAZON S3</a> > Move objects
+            
+            
+          
+          
+            <a href='/proxy/8000/'>START WITH AMAZON S3</a> > <a href='/proxy/8000/7-cloudfront/'>Accelerate Static Websites with Cloudfront</a> > Test Amazon Cloudfront
+          
+        
           
         
           
@@ -695,15 +701,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -719,7 +717,7 @@
           
             <h1>
               
-              Move objects
+              Test Amazon Cloudfront
             </h1>
           
 
@@ -727,103 +725,80 @@
 
 
 
-	<h4 id="move-objects">Move Objects</h4>
-<ul>
-<li>With the move action in the S3 console, you can move an object to a folder (prefix) in the same bucket, to another bucket/prefix</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0000.png?featherlight=false&width=50pc"></p>
-<ol>
-<li>
-<p>Next we will create a new <strong>bucket</strong></p>
-<ul>
-<li>In the <strong>S3 bucket</strong> console, select <strong>Create bucket</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0001.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>In the <strong>Bucket name</strong> field, enter <code>aws-first-cloud-journey-move</code></li>
-<li>In the <strong>AWS region</strong> section, select <strong>Asia Pacific (Singapore) ap-southeast-1</strong> as the region with the closest geographical distance to Vietnam users as of September 2023</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0002.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Keep the default values, scroll to the bottom of the page, select <code>Create bucket</code></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0003.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Move files between <strong>Buckets</strong></p>
-<ul>
-<li>In the <strong>Amazon S3</strong> console, select bucket <strong>aws-first-cloud-journey</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0004.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>
-<p>Check the <strong>square</strong> symbol next to the <strong>Name</strong> value to select all Objects in the bucket</p>
-</li>
-<li>
-<p>Select <strong>Action</strong>, select <strong>Calculate total size</strong></p>
-</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0005''.png?featherlight=false&width=90pc"></p>
-<ul>
-<li><strong>Result</strong>: you have a total of 182 objects corresponding to 21.2 MB, select <strong>Close</strong> to go back</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0005'.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>
-<p>Check the <strong>square</strong> symbol next to the <strong>Name</strong> value to select all Objects in the bucket</p>
-</li>
-<li>
-<p>Select <strong>Action</strong>, select <strong>Move</strong></p>
-</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0005.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Scroll down the middle of the page, in the <strong>Destination type</strong> section, select <strong>Bucket</strong>, select <strong>Browse S3</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0006.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Select <strong>S3 Buckets</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0007.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Select bucket name <strong>aws-first-cloud-journey-move</strong>, select <strong>Choose destination</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0008.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>
-<p>Scroll to the bottom of the page, in the <strong>Additional checksums</strong> section keep the default <strong>Copy existing checksum functions</strong>, select <strong>Move</strong></p>
-</li>
-<li>
-<p><strong>Noted</strong>: Amazon S3 uses <strong>checksum</strong> to verify the integrity of the data you upload, download, or copy your data from S3</p>
-</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0009.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Congratulations, you have successfully moved the file, select <strong>Close</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/00010.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Check the Object in the new Bucket</p>
-<ul>
-<li>In the <strong>Amazon S3</strong> console, select bucket name <strong>aws-first-cloud-journey-move</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/00011.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>
-<p>Check the <strong>square</strong> symbol next to the <strong>Name</strong> value to select all Objects in the bucket</p>
-</li>
-<li>
-<p>Select <strong>Action</strong>, select <strong>Calculate total size</strong></p>
-</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/00012.png?featherlight=false&width=90pc"></p>
-<ul>
-<li><strong>Result</strong>: you have a total of 182 objects corresponding to 21.2 MB -&gt; similar to the calculation of the total size of the bucket <strong>aws-first-cloud-journey</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/00013.png?featherlight=false&width=90pc"></p>
-</li>
+	<ol>
+<li>Check <strong>CloudFront</strong></li>
 </ol>
+<ul>
+<li>In the CloudFront interface, select <strong>ID</strong></li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.3/0001.png?featherlight=false&width=90pc"></p>
+<ul>
+<li>In the <strong>Distribution domain name</strong> section:
+<ul>
+<li>Make sure that CloudFront has been deployed by looking at the content in the <strong>Last modified</strong> section</li>
+<li>Select the <strong>square</strong> symbol to copy the URL</li>
+</ul>
+</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.3/0002.png?featherlight=false&width=90pc"></p>
+<ul>
+<li>Open another tab and paste the CloudFront URl value in the search bar then press enter</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.3/0003.png?featherlight=false&width=90pc"></p>
+<p>-&gt; Congratulations on successfully deploying Cloudfront to deliver a static website hosted on S3 without requirement for public buckets or objects</p>
+<ol start="2">
+<li>Check website load time</li>
+</ol>
+<ul>
+<li>
+<p>In step 6 (website check), you have seen that: with <strong>Static website hosting</strong> function of S3 - travel website needs about 0.614 seconds to load website! So let&rsquo;s see how many seconds the CLoudFront service has reduced this time.</p>
+</li>
+<li>
+<p>At the website interface about tourism, right-click and select <strong>Inspect</strong></p>
+</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.3/0004.png?featherlight=false&width=90pc"></p>
+<ul>
+<li>On the top right, select <strong>Netword</strong></li>
+<li>At the top left, select the <strong>reload</strong> icon</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.3/0005.png?featherlight=false&width=90pc"></p>
+<ul>
+<li>At the URL section of <strong>Distribution domain name</strong>, you will see that the time column displays a value of 13 ms (milliseconds) = 0.013 seconds (note: this value is only approximate, depending on each time - this time will increase or decrease)</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.3/0007.png?featherlight=false&width=90pc"></p>
+<ul>
+<li>Check the content of this website is being returned from which PoP in 450+ Points of Presence (PoP) globally
+<ul>
+<li>Click <strong>Distribution domain name</strong></li>
+<li>Select tab <strong>Headers</strong></li>
+<li>See <strong>x-amz-cf-pop</strong>, with value <strong>SGN50-P1</strong> as <a href="https://www.feitsui.com/en/article/3">Ho Chi Minh City</a></li>
+</ul>
+</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.3/0008'.png?featherlight=false&width=90pc"></p>
+<ul>
+<li>If you are in Hanoi and doing this lab, the Website content will return from the PoP in Ha Noi where AWS has just deployed in <a href="https://aws.amazon.com/about-aws/whats-new/2022/08/aws-new-edge-locations-vietnam/">2022</a></li>
+</ul>
+<ol start="3">
+<li>Summary</li>
+</ol>
+<ul>
+<li>
+<p>Through this lab you have seen 2 great utilities of CloudFront:</p>
+<ul>
+<li>
+<p>Distribute the content of a static website hosted on S3 without requirement for Public Bucket or Object -&gt; <strong>Increase security</strong></p>
+</li>
+<li>
+<p>Deliver content securely with low latency and fast transfer speeds -&gt; <strong>improved Latency</strong> by CloudFront will get content at the Edge location closest to the customer&rsquo;s location.</p>
+<ul>
+<li>Although in this lab, the latency is quite low - only milliseconds! But in reality, for websites with a larger amount of information, CloudFront is the solution to help EndUsers quickly access the website, contributing to ensuring a great experience for the end user.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
 
@@ -997,6 +972,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1012,37 +988,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1051,9 +998,6 @@
                     
                     
 
-                    
-            
-        
                     
             
         
@@ -1091,6 +1035,9 @@
             
         
                     
+            
+        
+                    
                         
             
             
@@ -1098,6 +1045,38 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1151,10 +1130,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/proxy/8000/8-versioning/" title="Bucket Versioning"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/proxy/8000/7-cloudfront/7.2-configure_amazon_cloudfront/" title="Config Amazon CloudFront"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/proxy/8000/10-s3ccr/" title="Replication Object multi Region" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/proxy/8000/8-versioning/" title="Bucket Versioning" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

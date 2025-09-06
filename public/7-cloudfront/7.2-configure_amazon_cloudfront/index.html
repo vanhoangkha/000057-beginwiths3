@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/proxy/8000/images/favicon.png" type="image/png">
 
-    <title>Move objects :: Start with Amazon S3</title>
+    <title>Config Amazon CloudFront :: Start with Amazon S3</title>
 
     
     <link href="/proxy/8000/css/nucleus.css?1757186767" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/proxy/8000/9-moveobject/">
+  <body class="" data-url="/proxy/8000/7-cloudfront/7.2-configure_amazon_cloudfront/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -307,7 +307,7 @@
   
     
     <li data-nav-id="/proxy/8000/7-cloudfront/" title="Accelerate Static Websites with Cloudfront" class="dd-item 
-        
+        parent
         
         
         ">
@@ -367,7 +367,7 @@
     
     <li data-nav-id="/proxy/8000/7-cloudfront/7.2-configure_amazon_cloudfront/" title="Config Amazon CloudFront" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/proxy/8000/7-cloudfront/7.2-configure_amazon_cloudfront/">
@@ -456,7 +456,7 @@
     
     <li data-nav-id="/proxy/8000/9-moveobject/" title="Move objects" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/proxy/8000/9-moveobject/">
@@ -585,7 +585,7 @@
                   
                     
                     
-                      <option id="en" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/9-moveobject/" selected>English</option>
+                      <option id="en" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/7.2-configure_amazon_cloudfront/" selected>English</option>
                     
                   
               
@@ -599,7 +599,7 @@
                   
                     
                     
-                      <option id="vi" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/9-moveobject/">Tiếng Việt</option>
+                      <option id="vi" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/7-cloudfront/7.2-configure_amazon_cloudfront/">Tiếng Việt</option>
                     
                   
               
@@ -684,7 +684,13 @@
             
           
           
-            <a href='/proxy/8000/'>START WITH AMAZON S3</a> > Move objects
+            
+            
+          
+          
+            <a href='/proxy/8000/'>START WITH AMAZON S3</a> > <a href='/proxy/8000/7-cloudfront/'>Accelerate Static Websites with Cloudfront</a> > Config Amazon CloudFront
+          
+        
           
         
           
@@ -695,15 +701,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -719,7 +717,7 @@
           
             <h1>
               
-              Move objects
+              Config Amazon CloudFront
             </h1>
           
 
@@ -727,103 +725,77 @@
 
 
 
-	<h4 id="move-objects">Move Objects</h4>
-<ul>
-<li>With the move action in the S3 console, you can move an object to a folder (prefix) in the same bucket, to another bucket/prefix</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0000.png?featherlight=false&width=50pc"></p>
+	
+<div class="notices danger" ><p><strong>CRITICAL ERROR:</strong> This configuration will NOT work! The tutorial instructs to use S3 bucket origin with OAI, but the bucket is configured as a website endpoint (step 3). AWS Documentation clearly states: &ldquo;If your origin is an Amazon S3 bucket configured as a website endpoint, you must set it up with CloudFront as a custom origin. That means you can&rsquo;t use OAC (or OAI).&rdquo; You must either:</p>
 <ol>
-<li>
-<p>Next we will create a new <strong>bucket</strong></p>
-<ul>
-<li>In the <strong>S3 bucket</strong> console, select <strong>Create bucket</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0001.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>In the <strong>Bucket name</strong> field, enter <code>aws-first-cloud-journey-move</code></li>
-<li>In the <strong>AWS region</strong> section, select <strong>Asia Pacific (Singapore) ap-southeast-1</strong> as the region with the closest geographical distance to Vietnam users as of September 2023</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0002.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Keep the default values, scroll to the bottom of the page, select <code>Create bucket</code></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0003.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Move files between <strong>Buckets</strong></p>
-<ul>
-<li>In the <strong>Amazon S3</strong> console, select bucket <strong>aws-first-cloud-journey</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0004.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>
-<p>Check the <strong>square</strong> symbol next to the <strong>Name</strong> value to select all Objects in the bucket</p>
-</li>
-<li>
-<p>Select <strong>Action</strong>, select <strong>Calculate total size</strong></p>
-</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0005''.png?featherlight=false&width=90pc"></p>
-<ul>
-<li><strong>Result</strong>: you have a total of 182 objects corresponding to 21.2 MB, select <strong>Close</strong> to go back</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0005'.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>
-<p>Check the <strong>square</strong> symbol next to the <strong>Name</strong> value to select all Objects in the bucket</p>
-</li>
-<li>
-<p>Select <strong>Action</strong>, select <strong>Move</strong></p>
-</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0005.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Scroll down the middle of the page, in the <strong>Destination type</strong> section, select <strong>Bucket</strong>, select <strong>Browse S3</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0006.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Select <strong>S3 Buckets</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0007.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Select bucket name <strong>aws-first-cloud-journey-move</strong>, select <strong>Choose destination</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0008.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>
-<p>Scroll to the bottom of the page, in the <strong>Additional checksums</strong> section keep the default <strong>Copy existing checksum functions</strong>, select <strong>Move</strong></p>
-</li>
-<li>
-<p><strong>Noted</strong>: Amazon S3 uses <strong>checksum</strong> to verify the integrity of the data you upload, download, or copy your data from S3</p>
-</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/0009.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>Congratulations, you have successfully moved the file, select <strong>Close</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/00010.png?featherlight=false&width=90pc"></p>
-</li>
-<li>
-<p>Check the Object in the new Bucket</p>
-<ul>
-<li>In the <strong>Amazon S3</strong> console, select bucket name <strong>aws-first-cloud-journey-move</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/00011.png?featherlight=false&width=90pc"></p>
-<ul>
-<li>
-<p>Check the <strong>square</strong> symbol next to the <strong>Name</strong> value to select all Objects in the bucket</p>
-</li>
-<li>
-<p>Select <strong>Action</strong>, select <strong>Calculate total size</strong></p>
-</li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/00012.png?featherlight=false&width=90pc"></p>
-<ul>
-<li><strong>Result</strong>: you have a total of 182 objects corresponding to 21.2 MB -&gt; similar to the calculation of the total size of the bucket <strong>aws-first-cloud-journey</strong></li>
-</ul>
-<p><img alt="Static website" src="/images/9-moveobject/00013.png?featherlight=false&width=90pc"></p>
-</li>
+<li>Use S3 bucket origin (not website endpoint) + OAC, OR</li>
+<li>Use S3 website endpoint as custom origin (without OAI/OAC)</li>
 </ol>
+</div>
+
+<p>Use the AWS management console, to create a <strong>CloudFront distribution</strong> and configure this service to serve the <strong>S3 Bucket</strong> we created earlier.</p>
+<ol>
+<li>Open the Amazon CloudFront console at <a href="https://console.aws.amazon.com/cloudfront/home">https://console.aws.amazon.com/cloudfront/home</a></li>
+<li>From the dashboard, click <strong>Create a CloudFront distribution</strong>.</li>
+</ol>
+<p><img alt="CF" src="/images/cf/7.2/0001.png?featherlight=false&width=90pc"></p>
+<ol start="3">
+<li>Specify the following settings for the distribution:</li>
+</ol>
+<ul>
+<li>
+<p>In the <strong>Origin domain</strong> field, select the S3 bucket you created earlier.</p>
+</li>
+<li>
+<p>In the <strong>Origin access</strong> field, select <strong>Legacy access identities</strong></p>
+<p><img alt="CF" src="/images/cf/7.2/0002.png?featherlight=false&width=90pc"></p>
+</li>
+<li>
+<p>Select <strong>Create new OAI</strong> -&gt; keep the value <strong>name</strong> &amp; select <strong>Create</strong> with OAI as Origin access identity</p>
+<p><img alt="CF" src="/images/cf/7.2/0003.png?featherlight=false&width=90pc"></p>
+<ul>
+<li>In the <strong>Bucket policy</strong> field, select <strong>Yes, update the bucket policy</strong> to let AWS auto update the permission to let CloudFront access into the S3 bucket</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.2/0004.png?featherlight=false&width=90pc"></p>
+<ul>
+<li>Scroll down near the bottom of the page:
+<ul>
+<li>
+<p>In the <strong>Web Application Firewall (WAF)</strong> section &amp; in this lab, select <strong>Do not enable security protections</strong></p>
+</li>
+<li>
+<p>In the <strong>Settings</strong> section,</p>
+<ul>
+<li>We will choose <strong>Use North America, Europe, Asia, Middle East, and Africa</strong>!</li>
+<li>In the <strong>Default root object - optional</strong> section, enter <code>index.html</code> which is the object you uploaded in step 2.2 (Loading data)</li>
+</ul>
+</li>
+<li>
+<p>Keep the default values, select <strong>Create distribution</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.2/0005.png?featherlight=false&width=90pc"></p>
+<p><strong>Note</strong>: In case, your actual customer is globally, you should select <strong>Use all edge locations (best performance)</strong> to deliver at <a href="https://aws.amazon.com/about-aws/global-infrastructure/#:~:text=The%20AWS%20Cloud%20in%20North,two%20Regional%20Edge%20Cache%20locations.">450+ Points of Presence(PoP),400+ Edge Locations</a>.</p>
+</li>
+</ul>
+<ol start="4">
+<li>Information <strong>CloudFront</strong></li>
+</ol>
+<ul>
+<li>After completing item 3 above, AWS will automatically redirect you to CloudFront information page as shown below, with status as <strong>Deploying</strong></li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.2/0006.png?featherlight=false&width=90pc"></p>
+<p><strong>Note</strong>: please wait for this status for a few minutes - depending on the number of edge locations you chose to deploy in item 3. In the meantime, you can open another tab to return to the S3 bucket &amp; see what values cloudfront has added to the bucket policy.</p>
+<ul>
+<li>In the S3 bucket interface, select Permissions</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.2/0007.png?featherlight=false&width=90pc"></p>
+<ul>
+<li>In the <strong>Bucket policy</strong> section, you review the important content</li>
+</ul>
+<p><img alt="CF" src="/images/cf/7.2/0008.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -997,6 +969,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1012,56 +985,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1098,6 +1023,57 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1151,10 +1127,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/proxy/8000/8-versioning/" title="Bucket Versioning"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/proxy/8000/7-cloudfront/7.1-block_all_public_access/" title="Block all public access"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/proxy/8000/10-s3ccr/" title="Replication Object multi Region" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/proxy/8000/7-cloudfront/7.3-test_cloudfront/" title="Test Amazon Cloudfront" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
