@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Configuring public access block on Start with Amazon S3</title>
-    <link>/4-blockpublicaccess/</link>
+    <link>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/4-blockpublicaccess/</link>
     <description>Recent content in Configuring public access block on Start with Amazon S3</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/4-blockpublicaccess/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/4-blockpublicaccess/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

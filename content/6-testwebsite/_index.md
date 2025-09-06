@@ -1,6 +1,6 @@
 ---
 title : "Test website"
-date : "`r Sys.Date()`"
+date : "2025-09-06"
 weight : 6
 chapter : false
 pre : " <b> 6. </b> "

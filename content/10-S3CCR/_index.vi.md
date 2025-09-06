@@ -1,6 +1,6 @@
 ---
 title: "Sao chép S3 Object sang region khác"
-date: "`r Sys.Date()`"
+date: "2025-09-06"
 weight: 10
 chapter: false
 pre: "<b> 10. </b>"
@@ -8,15 +8,46 @@ pre: "<b> 10. </b>"
 
 #### Amazon S3 Cross-Region Replication (CRR)
 
-- [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/) giúp bạn xây dựng phần **infra** (cơ sở hạ tầng) an toàn, hiệu suất cao, linh hoạt và hiệu quả. Dựa trên 6 trụ cột chính - với pillar **Reliability** sẽ là tinh thần cho bài lab này.
+#### Cross-Region Replication là gì?
 
-- Để đảm bảo tính **Reliability** (độ tin cậy) của hệ thống, trong bài lab này - các object được lưu trữ trong S3 bucket tại Region Singapore (ap-southeast-1) - nên được **replicate** (sao chép) sang một Region khác.
+Amazon S3 Cross-Region Replication (CRR) là một tính năng tự động sao chép các đối tượng giữa các bucket trong các vùng AWS khác nhau. Điều này cung cấp dự phòng địa lý và giúp đáp ứng các yêu cầu tuân thủ đồng thời cải thiện tính khả dụng của dữ liệu và khả năng khôi phục thảm họa.
+
+#### Lợi Ích Chính
+
+- **Khôi Phục Thảm Họa:** Bảo vệ chống lại sự cố vùng và thảm họa
+- **Tuân Thủ:** Đáp ứng các yêu cầu quy định về phân phối dữ liệu địa lý
+- **Giảm Độ Trễ:** Phục vụ nội dung từ các vùng gần người dùng hơn
+- **Chủ Quyền Dữ Liệu:** Giữ bản sao dữ liệu tại các vị trí địa lý cụ thể
+- **Xuất Sắc Vận Hành:** Duy trì tính liên tục kinh doanh qua các vùng
+
+#### Cách CRR Hoạt Động
+
+Khi CRR được cấu hình:
+- Các đối tượng được tự động sao chép đến các bucket đích trong các vùng khác nhau
+- Sao chép xảy ra không đồng bộ, thường trong vòng 15 phút
+- Metadata đối tượng, ACL và tag được bảo toàn trong quá trình sao chép
+- Versioning phải được bật trên cả bucket nguồn và đích
+- Vai trò IAM cung cấp các quyền cần thiết cho quá trình sao chép
+
+#### AWS Well-Architected Framework
+
+[AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/) giúp bạn xây dựng cơ sở hạ tầng an toàn, hiệu suất cao, linh hoạt và hiệu quả. Dựa trên 6 trụ cột chính, với trụ cột **Reliability** (Độ tin cậy) là trọng tâm của bài lab này.
+
+Để đảm bảo tính **Reliability** của hệ thống, các đối tượng được lưu trữ trong S3 bucket tại vùng Singapore (ap-southeast-1) nên được **sao chép** sang một vùng khác để dự phòng và khôi phục thảm họa.
 
 ![Static website](/images/10-s3crr/0000.png?featherlight=false&width=50pc)
 
-- Có nhiều tiêu chí để chọn một Region, ví dụ: **Compliance** (pháp chế), **Latency** (độ trễ), **Cost** (chi phí), **Services and features** (dịch vụ và tính năng). 
+#### Tiêu Chí Lựa Chọn Vùng
 
-- Do đó, trong khuôn khổ bài lab này, để lựa chọn một Region phục vụ cho việc **replicate**, chúng ta sẽ dựa trên tiêu chí: **Cost** (chi phí).
+Khi chọn vùng đích để sao chép, hãy xem xét các yếu tố sau:
+
+- **Tuân Thủ:** Yêu cầu quy định về vị trí dữ liệu
+- **Độ Trễ:** Khoảng cách đến người dùng cuối để tối ưu hiệu suất
+- **Chi Phí:** Chi phí truyền dữ liệu và lưu trữ khác nhau theo vùng
+- **Dịch Vụ và Tính Năng:** Tính khả dụng của các dịch vụ AWS cần thiết
+- **Khôi Phục Thảm Họa:** Tách biệt địa lý để giảm thiểu rủi ro
+
+Trong bài lab này, chúng ta sẽ chọn vùng đích dựa chủ yếu trên **tối ưu hóa chi phí** đồng thời duy trì sự tách biệt địa lý đầy đủ.
 
 - -> Region N. Virginia (us-east-1) với chi phí S3: 23.55 USD cho 1TB mỗi tháng - rẻ hơn 2.05 USD so với Region Singapore (ap-southeast-1) là một lựa chọn phù hợp với tiêu chí **Cost**. Bạn có thể kiểm tra chi phí tại trang [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=71e120e9a6a9ffe41d37144b4e2c92537b88eb58).
 

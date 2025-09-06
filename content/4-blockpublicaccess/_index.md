@@ -1,10 +1,14 @@
 ---
 title : "Configuring public access block"
-date : "`r Sys.Date()`"
+date : "2025-09-06"
 weight : 4
 chapter : false
 pre : " <b> 4. </b> "
 ---
+
+{{% notice warning %}}
+**AWS Security Best Practice Warning:** AWS strongly recommends keeping Block Public Access enabled. This tutorial disables it for learning purposes, but in production environments, you should use CloudFront with Origin Access Control (OAC) instead of making S3 buckets publicly accessible. See [AWS Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html) for secure alternatives.
+{{% /notice %}}
 
 #### Configure public access block
 

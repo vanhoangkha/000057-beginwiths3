@@ -1,12 +1,16 @@
 ---
 title: "Tăng tốc Static Website với Cloudfront"
-date: "`r Sys.Date()`"
+date: "2025-09-06"
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
 #### Giới thiệu
+
+{{% notice warning %}}
+**Lưu Ý Kỹ Thuật:** Tutorial này sử dụng S3 website endpoint với CloudFront, điều này yêu cầu cấu hình custom origin. Để bảo mật tốt hơn, AWS khuyến nghị sử dụng S3 bucket origin với Origin Access Control (OAC) thay vì S3 website endpoints. Xem [Tài liệu CloudFront OAC](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) để thiết lập production-ready.
+{{% /notice %}}
 
 Chúc mừng bạn đã host một trang web tĩnh - thành công trên dịch vụ Amazon S3, nhưng cần phải public S3 của bạn! Vậy làm sao để host một Static Website trên Amazon S3 mà không cần public bất kỳ thông tin nào về bucket của bạn?
 

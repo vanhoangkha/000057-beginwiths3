@@ -1,12 +1,16 @@
 ---
 title : "Accelerate Static Websites with Cloudfront"
-date : "`r Sys.Date()`"
+date : "2025-09-06"
 weight : 7
 chapter : false
 pre : " <b> 7. </b> "
 ---
 
 #### Introduce
+
+{{% notice warning %}}
+**Technical Note:** This tutorial uses S3 website endpoint with CloudFront, which requires custom origin configuration. For better security, AWS recommends using S3 bucket origin with Origin Access Control (OAC) instead of S3 website endpoints. See [CloudFront OAC Documentation](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) for production-ready setup.
+{{% /notice %}}
 
 Congratulations on hosting a static website - successfully on Amazon S3 service, but need to make your S3 public! So how to host a Static Website on Amazon S3 without publicizing any information about your bucket?
 

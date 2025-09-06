@@ -1,11 +1,15 @@
 ---
 title: "Khởi Đầu Với Amazon S3"
-date: "`r Sys.Date()`"
+date: "2025-09-06"
 weight: 1
 chapter: false
 ---
 
 # Khởi Đầu Với Amazon S3
+
+{{% notice tip %}}
+**Lựa Chọn Hiện Đại:** AWS hiện khuyến nghị sử dụng [AWS Amplify Hosting](https://aws.amazon.com/amplify/hosting/) để host website tĩnh vì nó cung cấp bảo mật tốt hơn, HTTPS mặc định, và CDN toàn cầu mà không cần cấu hình CloudFront thủ công. Tutorial này dạy các khái niệm cơ bản về S3 vẫn có giá trị để hiểu về AWS storage.
+{{% /notice %}}
 
 Amazon Simple Storage Service (Amazon S3) là một dịch vụ lưu trữ dạng đối tượng (object) cung cấp khả năng mở rộng theo yêu cầu sử dụng, đảm bảo tính khả dụng của dữ liệu, độ bảo mật và hiệu năng ở mức cao nhất.
 
@@ -26,7 +30,8 @@ Amazon S3 được thiết kế để đảm bảo độ bền 99.999999999% (11
 5. [Cấu Hình Public Object](5-publicobject/)
 6. [Kiểm Tra Website](6-testwebsite/)
 7. [Tăng Tốc Static Website Host trên S3](7-cloudfront/)
-8. [Tính Năng Bucket Versioning](8-moveobject/)
+8. [Tính Năng Bucket Versioning](8-versioning/)
 9. [Di Chuyển Object](9-moveobject/)
 10. [Sao Chép S3 Object sang Region Khác](10-S3CCR/)
 11. [Dọn Dẹp Tài Nguyên](11-cleanup/)
+12. [Ghi Chú & Best Practices](12-notes/)

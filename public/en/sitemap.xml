@@ -2,235 +2,261 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/7-cloudfront/7.1-block_all_public_access/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/2-prerequiste/2.1-creates3bucket/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-cloudfront/7.1-block_all_public_access/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/2-prerequiste/2.1-creates3bucket/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-cloudfront/7.1-block_all_public_access/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/2-prerequiste/2.1-creates3bucket/"
                 />
   </url><url>
-    <loc>/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.1-creates3bucket/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/7.1-block_all_public_access/</loc>
+    <lastmod>1970-01-01T00:33:41+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.1-creates3bucket/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/7-cloudfront/7.1-block_all_public_access/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.1-creates3bucket/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/7.1-block_all_public_access/"
                 />
   </url><url>
-    <loc>/1-introduce/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduce/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduce/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/1-introduce/"
                 />
   </url><url>
-    <loc>/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.2-uploaddata/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/2-prerequiste/2.2-uploaddata/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.2-uploaddata/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/2-prerequiste/2.2-uploaddata/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.2-uploaddata/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/2-prerequiste/2.2-uploaddata/"
                 />
   </url><url>
-    <loc>/2-prerequiste/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/2-prerequiste/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/2-prerequiste/"
                 />
   </url><url>
-    <loc>/3-staticwebsite/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/3-staticwebsite/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-staticwebsite/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/3-staticwebsite/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-staticwebsite/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/3-staticwebsite/"
                 />
   </url><url>
-    <loc>/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/"
                 />
   </url><url>
-    <loc>/4-blockpublicaccess/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/4-blockpublicaccess/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-blockpublicaccess/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/4-blockpublicaccess/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-blockpublicaccess/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/4-blockpublicaccess/"
                 />
   </url><url>
-    <loc>/5-publicobject/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/5-publicobject/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-publicobject/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/5-publicobject/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-publicobject/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/5-publicobject/"
                 />
   </url><url>
-    <loc>/6-testwebsite/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/6-testwebsite/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-testwebsite/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/6-testwebsite/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-testwebsite/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/6-testwebsite/"
                 />
   </url><url>
-    <loc>/7-cloudfront/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-cloudfront/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/7-cloudfront/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-cloudfront/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/7-cloudfront/"
                 />
   </url><url>
-    <loc>/8-versioning/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/8-versioning/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/8-versioning/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/8-versioning/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/8-versioning/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/8-versioning/"
                 />
   </url><url>
-    <loc>/9-moveobject/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/9-moveobject/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/9-moveobject/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/9-moveobject/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/9-moveobject/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/9-moveobject/"
                 />
   </url><url>
-    <loc>/10-s3ccr/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/10-s3ccr/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/10-s3ccr/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/10-s3ccr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/10-s3ccr/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/10-s3ccr/"
                 />
   </url><url>
-    <loc>/11-cleanup/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/11-cleanup/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/11-cleanup/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/11-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/11-cleanup/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/11-cleanup/"
                 />
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/12-notes/</loc>
+    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/12-notes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/12-notes/"
                 />
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/categories/"
+                />
+  </url><url>
+    <loc>https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/tags/"
                 />
   </url>
 </urlset>

@@ -1,10 +1,16 @@
 ---
 title : "Config Amazon CloudFront"
-date : "`r Sys.Date()`"
+date : "2025-09-06"
 weight : 2
 chapter : false
 pre : " <b> 7.2 </b> "
 ---
+
+{{% notice danger %}}
+**CRITICAL ERROR:** This configuration will NOT work! The tutorial instructs to use S3 bucket origin with OAI, but the bucket is configured as a website endpoint (step 3). AWS Documentation clearly states: "If your origin is an Amazon S3 bucket configured as a website endpoint, you must set it up with CloudFront as a custom origin. That means you can't use OAC (or OAI)." You must either:
+1. Use S3 bucket origin (not website endpoint) + OAC, OR  
+2. Use S3 website endpoint as custom origin (without OAI/OAC)
+{{% /notice %}}
 
 Use the AWS management console, to create a **CloudFront distribution** and configure this service to serve the **S3 Bucket** we created earlier.
 

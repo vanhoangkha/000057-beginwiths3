@@ -1,6 +1,6 @@
 ---
 title: "Bucket Versioning"
-date: "`r Sys.Date()`"
+date: "2025-09-06"
 weight: 8
 chapter: false
 pre: "<b> 8. </b>"
@@ -8,7 +8,43 @@ pre: "<b> 8. </b>"
 
 #### Giới thiệu
 
-Tính năng **Versioning** trong **Amazon S3** cho phép lưu trữ nhiều phiên bản của một **object** trong cùng một **bucket**. Sử dụng tính năng này, bạn có thể bảo toàn, truy xuất, và khôi phục mọi phiên bản của các **object** trong **bucket**. **Versioning** giúp phục hồi dễ dàng sau những hành động ngoài ý muốn hoặc lỗi ứng dụng. Khi **versioning** được kích hoạt, **Amazon S3** sẽ lưu trữ tất cả các phiên bản của **object** khi có nhiều **request write** cùng lúc.
+{{% notice info %}}
+**Lưu Ý Chi Phí:** Mỗi phiên bản của object được lưu trữ như một bản sao hoàn chỉnh, không chỉ là sự khác biệt. Nếu bạn có 3 phiên bản của một file, bạn sẽ trả tiền cho 3 file hoàn chỉnh. AWS tính phí theo mức giá S3 thông thường cho mỗi phiên bản được lưu trữ và truyền tải. Hãy cân nhắc sử dụng lifecycle policies để quản lý các phiên bản cũ.
+{{% /notice %}}
+
+#### S3 Versioning là gì?
+
+**Versioning** trong Amazon S3 là một tính năng cho phép bạn giữ nhiều biến thể của một đối tượng trong cùng một bucket. Khi versioning được bật, bạn có thể bảo toàn, truy xuất và khôi phục mọi phiên bản của mọi đối tượng được lưu trữ trong bucket của mình, cung cấp một lớp bảo vệ dữ liệu bổ sung chống lại việc xóa hoặc sửa đổi ngoài ý muốn.
+
+#### Lợi Ích Chính của Versioning
+
+- **Bảo Vệ Dữ Liệu:** Bảo vệ chống lại việc ghi đè và xóa ngoài ý muốn
+- **Theo Dõi Thay Đổi:** Duy trì lịch sử hoàn chỉnh của các sửa đổi đối tượng
+- **Khôi Phục Dễ Dàng:** Nhanh chóng khôi phục các phiên bản trước khi cần
+- **Tuân Thủ:** Đáp ứng các yêu cầu quy định về lưu giữ dữ liệu
+- **Cộng Tác:** Nhiều người dùng có thể làm việc trên cùng các đối tượng một cách an toàn
+
+#### Cách Versioning Hoạt Động
+
+Khi versioning được bật trên một bucket:
+- Mỗi đối tượng nhận được một ID phiên bản duy nhất
+- Các lần tải lên mới tạo ra các phiên bản mới thay vì ghi đè các đối tượng hiện có
+- Các phiên bản trước vẫn có thể truy cập và có thể được truy xuất bất cứ lúc nào
+- Các thao tác xóa tạo ra "delete marker" thay vì xóa vĩnh viễn đối tượng
+
+#### Trạng Thái Versioning
+
+Các bucket S3 có thể ở một trong ba trạng thái versioning:
+- **Unversioned (mặc định):** Không có versioning, các đối tượng có thể bị ghi đè
+- **Versioning-enabled:** Các phiên bản mới được tạo cho mỗi lần tải lên
+- **Versioning-suspended:** Không tạo phiên bản mới, nhưng các phiên bản hiện có vẫn còn
+
+#### Thực Hành Tốt Nhất
+
+- **Sử Dụng Lifecycle Policies:** Tự động xóa các phiên bản cũ sau một thời gian xác định
+- **Giám Sát Chi Phí:** Versioning có thể tăng đáng kể chi phí lưu trữ
+- **MFA Delete:** Bật MFA Delete để bảo mật bổ sung khi xóa phiên bản
+- **Cross-Region Replication:** Sao chép các phiên bản qua các vùng để khôi phục thảm họa
 
 ![Static website](/images/8'-versioning/0000.png?featherlight=false&width=20pc)
 

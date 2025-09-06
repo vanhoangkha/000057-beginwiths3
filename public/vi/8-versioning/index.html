@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.122.0">
+    <meta name="generator" content="Hugo 0.134.2">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="icon" href="/proxy/8000/images/favicon.png" type="image/png">
 
     <title>Bucket Versioning :: Khởi đầu với Amazon S3</title>
 
     
-    <link href="/css/nucleus.css?1713945727" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1713945727" rel="stylesheet">
-    <link href="/css/hybrid.css?1713945727" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1713945727" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1713945727" rel="stylesheet">
-    <link href="/css/auto-complete.css?1713945727" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1713945727" rel="stylesheet">
-    <link href="/css/theme.css?1713945727" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1713945727" rel="stylesheet">
+    <link href="/proxy/8000/css/nucleus.css?1757186134" rel="stylesheet">
+    <link href="/proxy/8000/css/fontawesome-all.min.css?1757186134" rel="stylesheet">
+    <link href="/proxy/8000/css/hybrid.css?1757186134" rel="stylesheet">
+    <link href="/proxy/8000/css/featherlight.min.css?1757186134" rel="stylesheet">
+    <link href="/proxy/8000/css/perfect-scrollbar.min.css?1757186134" rel="stylesheet">
+    <link href="/proxy/8000/css/auto-complete.css?1757186134" rel="stylesheet">
+    <link href="/proxy/8000/css/atom-one-dark-reasonable.css?1757186134" rel="stylesheet">
+    <link href="/proxy/8000/css/theme.css?1757186134" rel="stylesheet">
+    <link href="/proxy/8000/css/hugo-theme.css?1757186134" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1713945727" rel="stylesheet">
+    <link href="/proxy/8000/css/theme-workshop.css?1757186134" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1713945727"></script>
+    <script src="/proxy/8000/js/jquery-3.3.1.min.js?1757186134"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/vi/8-versioning/">
+  <body class="" data-url="/proxy/8000/vi/8-versioning/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1713945727"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1713945727"></script>
+<script type="text/javascript" src="/proxy/8000/js/lunr.min.js?1757186134"></script>
+<script type="text/javascript" src="/proxy/8000/js/auto-complete.js?1757186134"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "https:\/\/d1mefc4m0jz7l1.cloudfront.net\/proxy\/8000\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1713945727"></script>
+<script type="text/javascript" src="/proxy/8000/js/search.js?1757186134"></script>
 
     
   </div>
@@ -82,12 +82,12 @@
  
   
     
-    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/vi/1-introduce/">
+      <a href="/proxy/8000/vi/1-introduce/">
           <b> 1. </b>Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
@@ -108,12 +108,12 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequiste/" title="Các Bước Chuẩn Bị" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/2-prerequiste/" title="Các Bước Chuẩn Bị" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-prerequiste/">
+      <a href="/proxy/8000/vi/2-prerequiste/">
           <b> 2. </b>Các Bước Chuẩn Bị
           
             <i class="fas fa-check read-icon"></i>
@@ -139,12 +139,12 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequiste/2.1-creates3bucket/" title="Tạo S3 bucket" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/2-prerequiste/2.1-creates3bucket/" title="Tạo S3 bucket" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-prerequiste/2.1-creates3bucket/">
+      <a href="/proxy/8000/vi/2-prerequiste/2.1-creates3bucket/">
           <b> 2.1 </b>Tạo S3 bucket
           
             <i class="fas fa-check read-icon"></i>
@@ -167,12 +167,12 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequiste/2.2-uploaddata/" title="Tải dữ liệu" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/2-prerequiste/2.2-uploaddata/" title="Tải dữ liệu" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-prerequiste/2.2-uploaddata/">
+      <a href="/proxy/8000/vi/2-prerequiste/2.2-uploaddata/">
            <b> 2.2 </b> Tải dữ liệu
           
             <i class="fas fa-check read-icon"></i>
@@ -202,12 +202,12 @@
  
   
     
-    <li data-nav-id="/vi/3-staticwebsite/" title="Bật tính năng static website" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/3-staticwebsite/" title="Bật tính năng static website" class="dd-item 
         
         
         
         ">
-      <a href="/vi/3-staticwebsite/">
+      <a href="/proxy/8000/vi/3-staticwebsite/">
           <b> 3. </b>Bật tính năng static website
           
             <i class="fas fa-check read-icon"></i>
@@ -228,12 +228,12 @@
  
   
     
-    <li data-nav-id="/vi/4-blockpublicaccess/" title="Cấu hình Block Public Access" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/4-blockpublicaccess/" title="Cấu hình Block Public Access" class="dd-item 
         
         
         
         ">
-      <a href="/vi/4-blockpublicaccess/">
+      <a href="/proxy/8000/vi/4-blockpublicaccess/">
           <b> 4. </b>Cấu hình Block Public Access
           
             <i class="fas fa-check read-icon"></i>
@@ -254,13 +254,13 @@
  
   
     
-    <li data-nav-id="/vi/5-publicobject/" title="Cấu hình Public Object" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/5-publicobject/" title="Cấu hình public object" class="dd-item 
         
         
         
         ">
-      <a href="/vi/5-publicobject/">
-          <b> 5. </b>Cấu hình Public Object
+      <a href="/proxy/8000/vi/5-publicobject/">
+          <b> 5. </b>Cấu hình public object
           
             <i class="fas fa-check read-icon"></i>
           
@@ -280,12 +280,12 @@
  
   
     
-    <li data-nav-id="/vi/6-testwebsite/" title="Kiểm Tra Website" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/6-testwebsite/" title="Kiểm Tra Website" class="dd-item 
         
         
         
         ">
-      <a href="/vi/6-testwebsite/">
+      <a href="/proxy/8000/vi/6-testwebsite/">
           <b> 6. </b>Kiểm Tra Website
           
             <i class="fas fa-check read-icon"></i>
@@ -306,12 +306,12 @@
  
   
     
-    <li data-nav-id="/vi/7-cloudfront/" title="Tăng tốc Static Website với Cloudfront" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/7-cloudfront/" title="Tăng tốc Static Website với Cloudfront" class="dd-item 
         
         
         
         ">
-      <a href="/vi/7-cloudfront/">
+      <a href="/proxy/8000/vi/7-cloudfront/">
            <b> 7. </b> Tăng tốc Static Website với Cloudfront
           
             <i class="fas fa-check read-icon"></i>
@@ -337,12 +337,12 @@
  
   
     
-    <li data-nav-id="/vi/7-cloudfront/7.1-block_all_public_access/" title="Chặn tất cả truy cập công cộng vào S3" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/7-cloudfront/7.1-block_all_public_access/" title="Chặn tất cả truy cập công cộng vào S3" class="dd-item 
         
         
         
         ">
-      <a href="/vi/7-cloudfront/7.1-block_all_public_access/">
+      <a href="/proxy/8000/vi/7-cloudfront/7.1-block_all_public_access/">
            <b> 7.1 </b> Chặn tất cả truy cập công cộng vào S3
           
             <i class="fas fa-check read-icon"></i>
@@ -365,12 +365,12 @@
  
   
     
-    <li data-nav-id="/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/" title="Cấu hình Amazon CloudFront" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/" title="Cấu hình Amazon CloudFront" class="dd-item 
         
         
         
         ">
-      <a href="/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/">
+      <a href="/proxy/8000/vi/7-cloudfront/7.2-c%E1%BA%A5u_h%C3%ACnh_amazon_cloudfront/">
           <b> 7.2 </b>Cấu hình Amazon CloudFront
           
             <i class="fas fa-check read-icon"></i>
@@ -393,12 +393,12 @@
  
   
     
-    <li data-nav-id="/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/" title="Kiểm tra Amazon CloudFront" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/" title="Kiểm tra Amazon CloudFront" class="dd-item 
         
         
         
         ">
-      <a href="/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/">
+      <a href="/proxy/8000/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/">
           <b> 7.3 </b>Kiểm tra Amazon CloudFront
           
             <i class="fas fa-check read-icon"></i>
@@ -428,12 +428,12 @@
  
   
     
-    <li data-nav-id="/vi/8-versioning/" title="Bucket Versioning" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/8-versioning/" title="Bucket Versioning" class="dd-item 
         
         active
         
         ">
-      <a href="/vi/8-versioning/">
+      <a href="/proxy/8000/vi/8-versioning/">
           <b> 8. </b>Bucket Versioning
           
             <i class="fas fa-check read-icon"></i>
@@ -454,12 +454,12 @@
  
   
     
-    <li data-nav-id="/vi/9-moveobject/" title="Di chuyển Object" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/9-moveobject/" title="Di chuyển Object" class="dd-item 
         
         
         
         ">
-      <a href="/vi/9-moveobject/">
+      <a href="/proxy/8000/vi/9-moveobject/">
           <b> 9. </b>Di chuyển Object
           
             <i class="fas fa-check read-icon"></i>
@@ -480,12 +480,12 @@
  
   
     
-    <li data-nav-id="/vi/10-s3ccr/" title="Sao chép S3 Object sang region khác" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/10-s3ccr/" title="Sao chép S3 Object sang region khác" class="dd-item 
         
         
         
         ">
-      <a href="/vi/10-s3ccr/">
+      <a href="/proxy/8000/vi/10-s3ccr/">
           <b> 10. </b>Sao chép S3 Object sang region khác
           
             <i class="fas fa-check read-icon"></i>
@@ -506,13 +506,39 @@
  
   
     
-    <li data-nav-id="/vi/11-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
+    <li data-nav-id="/proxy/8000/vi/11-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
         
         
         
         ">
-      <a href="/vi/11-cleanup/">
+      <a href="/proxy/8000/vi/11-cleanup/">
           <b> 11. </b>Dọn dẹp tài nguyên
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/proxy/8000/vi/12-notes/" title="Ghi Chú &amp; Thực Hành Tốt Nhất" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/proxy/8000/vi/12-notes/">
+           <b> 12. </b> Ghi Chú &amp; Thực Hành Tốt Nhất
           
             <i class="fas fa-check read-icon"></i>
           
@@ -559,7 +585,7 @@
                   
                     
                     
-                      <option id="en" value="/8-versioning/">English</option>
+                      <option id="en" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/8-versioning/">English</option>
                     
                   
               
@@ -573,7 +599,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/8-versioning/" selected>Tiếng Việt</option>
+                      <option id="vi" value="https://d1mefc4m0jz7l1.cloudfront.net/proxy/8000/vi/8-versioning/" selected>Tiếng Việt</option>
                     
                   
               
@@ -658,7 +684,7 @@
             
           
           
-            <a href='/vi/'>Khởi Đầu Với Amazon S3</a> > Bucket Versioning
+            <a href='/proxy/8000/vi/'>Khởi Đầu Với Amazon S3</a> > Bucket Versioning
           
         
           
@@ -702,8 +728,43 @@
 
 
 	<h4 id="giới-thiệu">Giới thiệu</h4>
-<p>Tính năng <strong>Versioning</strong> trong <strong>Amazon S3</strong> cho phép lưu trữ nhiều phiên bản của một <strong>object</strong> trong cùng một <strong>bucket</strong>. Sử dụng tính năng này, bạn có thể bảo toàn, truy xuất, và khôi phục mọi phiên bản của các <strong>object</strong> trong <strong>bucket</strong>. <strong>Versioning</strong> giúp phục hồi dễ dàng sau những hành động ngoài ý muốn hoặc lỗi ứng dụng. Khi <strong>versioning</strong> được kích hoạt, <strong>Amazon S3</strong> sẽ lưu trữ tất cả các phiên bản của <strong>object</strong> khi có nhiều <strong>request write</strong> cùng lúc.</p>
-<p><img src="/images/8'-versioning/0000.png?featherlight=false&amp;width=20pc" alt="Static website"></p>
+
+<div class="notices info" ><p><strong>Lưu Ý Chi Phí:</strong> Mỗi phiên bản của object được lưu trữ như một bản sao hoàn chỉnh, không chỉ là sự khác biệt. Nếu bạn có 3 phiên bản của một file, bạn sẽ trả tiền cho 3 file hoàn chỉnh. AWS tính phí theo mức giá S3 thông thường cho mỗi phiên bản được lưu trữ và truyền tải. Hãy cân nhắc sử dụng lifecycle policies để quản lý các phiên bản cũ.</p>
+</div>
+
+<h4 id="s3-versioning-là-gì">S3 Versioning là gì?</h4>
+<p><strong>Versioning</strong> trong Amazon S3 là một tính năng cho phép bạn giữ nhiều biến thể của một đối tượng trong cùng một bucket. Khi versioning được bật, bạn có thể bảo toàn, truy xuất và khôi phục mọi phiên bản của mọi đối tượng được lưu trữ trong bucket của mình, cung cấp một lớp bảo vệ dữ liệu bổ sung chống lại việc xóa hoặc sửa đổi ngoài ý muốn.</p>
+<h4 id="lợi-ích-chính-của-versioning">Lợi Ích Chính của Versioning</h4>
+<ul>
+<li><strong>Bảo Vệ Dữ Liệu:</strong> Bảo vệ chống lại việc ghi đè và xóa ngoài ý muốn</li>
+<li><strong>Theo Dõi Thay Đổi:</strong> Duy trì lịch sử hoàn chỉnh của các sửa đổi đối tượng</li>
+<li><strong>Khôi Phục Dễ Dàng:</strong> Nhanh chóng khôi phục các phiên bản trước khi cần</li>
+<li><strong>Tuân Thủ:</strong> Đáp ứng các yêu cầu quy định về lưu giữ dữ liệu</li>
+<li><strong>Cộng Tác:</strong> Nhiều người dùng có thể làm việc trên cùng các đối tượng một cách an toàn</li>
+</ul>
+<h4 id="cách-versioning-hoạt-động">Cách Versioning Hoạt Động</h4>
+<p>Khi versioning được bật trên một bucket:</p>
+<ul>
+<li>Mỗi đối tượng nhận được một ID phiên bản duy nhất</li>
+<li>Các lần tải lên mới tạo ra các phiên bản mới thay vì ghi đè các đối tượng hiện có</li>
+<li>Các phiên bản trước vẫn có thể truy cập và có thể được truy xuất bất cứ lúc nào</li>
+<li>Các thao tác xóa tạo ra &ldquo;delete marker&rdquo; thay vì xóa vĩnh viễn đối tượng</li>
+</ul>
+<h4 id="trạng-thái-versioning">Trạng Thái Versioning</h4>
+<p>Các bucket S3 có thể ở một trong ba trạng thái versioning:</p>
+<ul>
+<li><strong>Unversioned (mặc định):</strong> Không có versioning, các đối tượng có thể bị ghi đè</li>
+<li><strong>Versioning-enabled:</strong> Các phiên bản mới được tạo cho mỗi lần tải lên</li>
+<li><strong>Versioning-suspended:</strong> Không tạo phiên bản mới, nhưng các phiên bản hiện có vẫn còn</li>
+</ul>
+<h4 id="thực-hành-tốt-nhất">Thực Hành Tốt Nhất</h4>
+<ul>
+<li><strong>Sử Dụng Lifecycle Policies:</strong> Tự động xóa các phiên bản cũ sau một thời gian xác định</li>
+<li><strong>Giám Sát Chi Phí:</strong> Versioning có thể tăng đáng kể chi phí lưu trữ</li>
+<li><strong>MFA Delete:</strong> Bật MFA Delete để bảo mật bổ sung khi xóa phiên bản</li>
+<li><strong>Cross-Region Replication:</strong> Sao chép các phiên bản qua các vùng để khôi phục thảm họa</li>
+</ul>
+<p><img alt="Static website" src="/images/8'-versioning/0000.png?featherlight=false&width=20pc"></p>
 <h4 id="1-bật-tính-năng-versioning-cho-bucket">1. Bật tính năng <strong>versioning</strong> cho <strong>bucket</strong></h4>
 <ul>
 <li>
@@ -711,11 +772,11 @@
 </li>
 <li>
 <p>Chọn <strong>Properties</strong>, sau đó tại mục Bucket Versioning, chọn <strong>Edit</strong>.</p>
-<p><img src="/images/8'-versioning/0001.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/0001.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Tại mục <strong>Bucket Versioning</strong>, chọn <strong>Enable</strong> và <strong>Save changes</strong>.</p>
-<p><img src="/images/8'-versioning/0002.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/0002.png?featherlight=false&width=90pc"></p>
 </li>
 </ul>
 <h4 id="2-thay-đổi-nội-dung-file-indexhtml">2. Thay đổi nội dung file <strong>index.html</strong></h4>
@@ -725,7 +786,7 @@
 </li>
 <li>
 <p>Chọn file <strong>index.html</strong>, chuột phải và chọn <strong>Open with &gt; Notepad</strong>.</p>
-<p><img src="/images/8'-versioning/0003.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/0003.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Thay đổi nội dung <code>AWS First Cloud Journey</code> thành <code>HỌC CLOUD ^^ VUI BIẾT BAO &lt;3</code> trong tag <strong>body</strong>.</p>
@@ -733,9 +794,9 @@
 <li>
 <p>Lưu thay đổi bằng tổ hợp phím <strong>Ctrl + S</strong>.</p>
 <p>Trước khi chỉnh sửa:</p>
-<p><img src="/images/8'-versioning/0004.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/0004.png?featherlight=false&width=90pc"></p>
 <p>Sau khi chỉnh sửa:</p>
-<p><img src="/images/8'-versioning/0005.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/0005.png?featherlight=false&width=90pc"></p>
 </li>
 </ul>
 <h4 id="3-kiểm-tra-tính-năng-versioning-trên-s3">3. Kiểm tra tính năng <strong>versioning</strong> trên <strong>S3</strong></h4>
@@ -745,66 +806,66 @@
 </li>
 <li>
 <p>Kéo thả file <strong>index.html</strong> đã chỉnh sửa vào bucket.</p>
-<p><img src="/images/8'-versioning/0006.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/0006.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Hoàn tất quá trình <strong>upload</strong>, sau đó chọn <strong>Close</strong>.</p>
-<p><img src="/images/8'-versioning/0007.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/0007.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Tìm kiếm <code>index.html</code>, sau đó kích hoạt <strong>Show versions</strong> để xem các phiên bản của file.</p>
-<p><img src="/images/8'-versioning/0009.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/0009.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Bạn sẽ thấy hai phiên bản của file <strong>index.html</strong> với thời gian chỉnh sửa khác nhau.</p>
-<p><img src="/images/8'-versioning/00010.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00010.png?featherlight=false&width=90pc"></p>
 </li>
 </ul>
 <h4 id="4-kiểm-tra-tính-năng-versioning-trên-cloudfront">4. Kiểm tra tính năng <strong>versioning</strong> trên <strong>Cloudfront</strong></h4>
 <ul>
 <li>
 <p>Truy cập <a href="https://000057.awsstudygroup.com/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/">7.3 Kiểm tra Amazon CloudFront</a> và xem <strong>Distribution domain name</strong>.</p>
-<p><img src="/images/8'-versioning/00011.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00011.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Xem liệu <strong>Default root object</strong> có thay đổi sau khi upload phiên bản mới của <code>index.html</code> hay không.</p>
 </li>
 <li>
 <p>Truy cập <strong>Amazon CloudFront</strong> tại <a href="https://console.aws.amazon.com/cloudfront/home">https://console.aws.amazon.com/cloudfront/home</a>, chọn <strong>Distribution ID</strong> hiện tại.</p>
-<p><img src="/images/8'-versioning/00012.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00012.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Chọn <strong>Behaviors</strong>, sau đó chọn <strong>Edit</strong>.</p>
-<p><img src="/images/8'-versioning/00013.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00013.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Tại <strong>Cache key and origin requests</strong>, chọn <strong>Legacy cache settings</strong>. Tại mục <strong>Object caching</strong>, chọn <strong>Customize</strong> và cài đặt <strong>Maximum TTL</strong> và <strong>Default TTL</strong> là <code>1</code>. Sau đó chọn <strong>Save changes</strong>.</p>
-<p><img src="/images/8'-versioning/00014.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00014.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Chờ đến khi trạng thái chuyển từ <strong>Deploying</strong> sang thời gian cuối cùng chỉnh sửa.</p>
-<p><img src="/images/8'-versioning/00015.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
-<p><img src="/images/8'-versioning/00016'.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00015.png?featherlight=false&width=90pc"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00016'.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Sao chép <strong>Domain name</strong> vào trình duyệt để xem thay đổi.</p>
-<p><img src="/images/8'-versioning/00016.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00016.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Để khôi phục nhanh chóng nội dung cũ, xóa phiên bản mới nhất của <strong>index.html</strong> trên <strong>S3 bucket</strong>.</p>
-<p><img src="/images/8'-versioning/00017.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00017.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Chọn object cần xóa và chọn <strong>Delete</strong>.</p>
-<p><img src="/images/8'-versioning/00018.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00018.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Kiểm tra và xác nhận xóa bằng cách nhập <code>permanently delete</code> và chọn <strong>Delete objects</strong>.</p>
-<p><img src="/images/8'-versioning/00019.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00019.png?featherlight=false&width=90pc"></p>
 </li>
 <li>
 <p>Refesh trình duyệt chạy <strong>Domain name</strong> của <strong>CloudFront</strong> để xem nội dung cũ được phục hồi.</p>
-<p><img src="/images/8'-versioning/00020.png?featherlight=false&amp;width=90pc" alt="Static website"></p>
+<p><img alt="Static website" src="/images/8'-versioning/00020.png?featherlight=false&width=90pc"></p>
 </li>
 </ul>
 
@@ -1109,6 +1170,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -1118,10 +1195,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/" title="Kiểm tra Amazon CloudFront"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/proxy/8000/vi/7-cloudfront/7.3-ki%E1%BB%83m_tra_cloudfront/" title="Kiểm tra Amazon CloudFront"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/9-moveobject/" title="Di chuyển Object" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/proxy/8000/vi/9-moveobject/" title="Di chuyển Object" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1131,19 +1208,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1713945727"></script>
-    <script src="/js/perfect-scrollbar.min.js?1713945727"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1713945727"></script>
-    <script src="/js/jquery.sticky.js?1713945727"></script>
-    <script src="/js/featherlight.min.js?1713945727"></script>
-    <script src="/js/highlight.pack.js?1713945727"></script>
+    <script src="/proxy/8000/js/clipboard.min.js?1757186134"></script>
+    <script src="/proxy/8000/js/perfect-scrollbar.min.js?1757186134"></script>
+    <script src="/proxy/8000/js/perfect-scrollbar.jquery.min.js?1757186134"></script>
+    <script src="/proxy/8000/js/jquery.sticky.js?1757186134"></script>
+    <script src="/proxy/8000/js/featherlight.min.js?1757186134"></script>
+    <script src="/proxy/8000/js/highlight.pack.js?1757186134"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1713945727"></script>
-    <script src="/js/learn.js?1713945727"></script>
-    <script src="/js/hugo-learn.js?1713945727"></script>
+    <script src="/proxy/8000/js/modernizr.custom-3.6.0.js?1757186134"></script>
+    <script src="/proxy/8000/js/learn.js?1757186134"></script>
+    <script src="/proxy/8000/js/hugo-learn.js?1757186134"></script>
 
-    <link href="/mermaid/mermaid.css?1713945727" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1713945727"></script>
+    <link href="/proxy/8000/mermaid/mermaid.css?1757186134" rel="stylesheet" />
+    <script src="/proxy/8000/mermaid/mermaid.js?1757186134"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

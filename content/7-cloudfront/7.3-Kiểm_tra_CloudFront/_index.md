@@ -1,6 +1,6 @@
 ---
 title : "Test Amazon Cloudfront"
-date : "`r Sys.Date()`"
+date : "2025-09-06"
 weight : 3
 chapter : false
 pre : " <b> 7.3 </b> "
