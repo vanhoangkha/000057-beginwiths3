@@ -114,10 +114,10 @@ http://bucket-name.s3-website-region.amazonaws.com
 
 #### What You've Accomplished
 
-- ✅ Enabled static website hosting on your S3 bucket
-- ✅ Configured index.html as the default document
-- ✅ Generated a website endpoint URL
-- ✅ Prepared the bucket to serve web content
+- Enabled static website hosting on your S3 bucket
+- Configured index.html as the default document
+- Generated a website endpoint URL
+- Prepared the bucket to serve web content
 
 #### Next Steps
 

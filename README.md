@@ -1,4 +1,4 @@
-# 📦 Begin with S3
+# Begin with S3
 
 Get started with Amazon S3 storage fundamentals.
 
@@ -8,7 +8,7 @@ This is a hands-on workshop from the **AWS First Cloud Journey** series, designe
 
 ## Workshop
 
-📖 **[Start the workshop](https://vanhoangkha.github.io/000057-beginwiths3/)**
+**[Start the workshop](https://vanhoangkha.github.io/000057-beginwiths3/)**
 
 ## Prerequisites
 

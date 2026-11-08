@@ -114,10 +114,10 @@ http://bucket-name.s3-website-region.amazonaws.com
 
 #### Những gì Bạn Đã Hoàn thành
 
-- ✅ Bật static website hosting trên S3 bucket của bạn
-- ✅ Cấu hình index.html làm tài liệu mặc định
-- ✅ Tạo URL website endpoint
-- ✅ Chuẩn bị bucket để phục vụ nội dung web
+- Bật static website hosting trên S3 bucket của bạn
+- Cấu hình index.html làm tài liệu mặc định
+- Tạo URL website endpoint
+- Chuẩn bị bucket để phục vụ nội dung web
 
 #### Các Bước Tiếp theo
 

@@ -109,10 +109,10 @@ An S3 bucket is a container for objects stored in Amazon S3. Think of it as a to
 
 #### What You've Accomplished
 
-- ✅ Created a globally unique S3 bucket
-- ✅ Configured secure default settings
-- ✅ Selected appropriate region for your use case
-- ✅ Set up the foundation for static website hosting
+- Created a globally unique S3 bucket
+- Configured secure default settings
+- Selected appropriate region for your use case
+- Set up the foundation for static website hosting
 
 #### Next Steps
 

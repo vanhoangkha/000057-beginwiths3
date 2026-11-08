@@ -165,10 +165,10 @@ While this lab uses ACLs, there are other ways to make S3 objects public:
 
 #### What You've Accomplished
 
-- ✅ Enabled ACLs on your S3 bucket
-- ✅ Configured appropriate object ownership settings
-- ✅ Made website objects publicly accessible
-- ✅ Prepared your bucket for static website hosting
+- Enabled ACLs on your S3 bucket
+- Configured appropriate object ownership settings
+- Made website objects publicly accessible
+- Prepared your bucket for static website hosting
 
 #### Next Steps
 

@@ -109,10 +109,10 @@ S3 bucket là một container chứa các đối tượng được lưu trữ tr
 
 #### Những gì Bạn Đã Hoàn thành
 
-- ✅ Tạo một S3 bucket duy nhất trên toàn cầu
-- ✅ Cấu hình cài đặt mặc định an toàn
-- ✅ Chọn vùng phù hợp cho trường hợp sử dụng của bạn
-- ✅ Thiết lập nền tảng cho việc lưu trữ website tĩnh
+- Tạo một S3 bucket duy nhất trên toàn cầu
+- Cấu hình cài đặt mặc định an toàn
+- Chọn vùng phù hợp cho trường hợp sử dụng của bạn
+- Thiết lập nền tảng cho việc lưu trữ website tĩnh
 
 #### Các Bước Tiếp theo
 
