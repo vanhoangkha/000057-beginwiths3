@@ -165,10 +165,10 @@ Trong khi bài lab này sử dụng ACL, có các cách khác để làm công k
 
 #### Những gì Bạn Đã Hoàn thành
 
-- ✅ Bật ACL trên S3 bucket của bạn
-- ✅ Cấu hình cài đặt object ownership phù hợp
-- ✅ Làm cho các đối tượng website có thể truy cập công khai
-- ✅ Chuẩn bị bucket của bạn cho static website hosting
+- Bật ACL trên S3 bucket của bạn
+- Cấu hình cài đặt object ownership phù hợp
+- Làm cho các đối tượng website có thể truy cập công khai
+- Chuẩn bị bucket của bạn cho static website hosting
 
 #### Các Bước Tiếp theo
 
